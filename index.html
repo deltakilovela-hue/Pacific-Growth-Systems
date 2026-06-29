@@ -1,463 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Pacific Growth Systems | AI CRM, Content & Automation for Local Businesses</title>
-<meta name="description" content="Pacific Growth Systems helps local businesses turn content into conversations, conversations into leads, and leads into booked appointments with AI-powered CRM, automation, and content systems."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Growth Systems for Burnaby & Metro Vancouver | Pacific Growth Systems</title>
+  <meta name="description" content="Pacific Growth Systems helps local businesses in Burnaby and Metro Vancouver capture leads, automate follow-up, organize CRM, and stay visible online with AI-powered growth systems.">
+  <meta property="og:title" content="AI Growth Systems for Burnaby & Metro Vancouver | Pacific Growth Systems">
+  <meta property="og:description" content="Turn content into conversations, conversations into leads, and leads into booked appointments with AI-powered CRM, automation, and content systems.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pacific Growth Systems",
+    "description": "AI-powered growth systems for local businesses in Burnaby and Metro Vancouver.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Burnaby",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "areaServed": ["Burnaby", "Metro Vancouver", "British Columbia"],
+    "serviceType": ["AI CRM", "Sales Automation", "Lead Capture", "AI Chat Agents", "Content Creation"]
+  }
+  </script>
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0B1D3A;
+      --blue: #1E6BF2;
+      --aqua: #00B8D9;
+      --green: #22C55E;
+      --gray: #F2F4F7;
+      --white: #FFFFFF;
+      --text: #1A2A3A;
+      --text-muted: #5A6A7A;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 4px 24px rgba(11,29,58,.12);
+      --shadow-lg: 0 12px 48px rgba(11,29,58,.18);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.65; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4,h5 { font-family: 'Sora', sans-serif; line-height: 1.2; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
 
-:root{
-  --navy:#0D1F3C;
-  --blue:#1B3A6B;
-  --blue-mid:#1d4280;
-  --aqua:#00B4D8;
-  --aqua-light:#33c6e2;
-  --green:#2ECC71;
-  --green-dark:#27ae60;
-  --gray-bg:#F4F6F9;
-  --gray-mid:#E2E8F0;
-  --gray-text:#64748B;
-  --gray-muted:#94A3B8;
-  --text:#0F172A;
-  --white:#FFFFFF;
-  --r-sm:8px;
-  --r-md:12px;
-  --r-lg:16px;
-  --r-xl:24px;
-  --shadow-sm:0 1px 3px rgba(13,31,60,.06),0 1px 2px rgba(13,31,60,.04);
-  --shadow-md:0 4px 16px rgba(13,31,60,.08),0 2px 6px rgba(13,31,60,.04);
-  --shadow-lg:0 12px 40px rgba(13,31,60,.12),0 4px 12px rgba(13,31,60,.06);
-  --shadow-xl:0 24px 64px rgba(13,31,60,.16);
-}
+    /* Scroll progress */
+    #scroll-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg,var(--blue),var(--aqua)); width: 0%; z-index: 9999; transition: width .1s; }
 
-body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+    /* Layout */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 96px 0; }
+    .section-label { font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--aqua); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.75rem, 3.5vw, 2.6rem); font-weight: 700; color: var(--navy); margin-bottom: 20px; }
+    .section-sub { font-size: 1.05rem; color: var(--text-muted); max-width: 620px; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
 
-/* ─── SCROLL PROGRESS ─── */
-#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:300;background:linear-gradient(90deg,var(--blue),var(--aqua),var(--green));box-shadow:0 0 8px rgba(0,180,216,.5);transition:width 80ms linear}
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 50px; font-family: 'Sora', sans-serif; font-size: .95rem; font-weight: 600; cursor: pointer; transition: all .22s; border: none; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: #155ee0; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30,107,242,.35); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.4); }
+    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+    .btn-outline-blue { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+    .btn-outline-blue:hover { background: var(--blue); color: #fff; }
+    .btn-lg { padding: 18px 36px; font-size: 1rem; }
 
-/* ─── BACK TO TOP ─── */
-#to-top{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;background:var(--blue);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:150;opacity:0;visibility:hidden;transform:translateY(12px);transition:all 250ms ease;box-shadow:0 6px 20px rgba(27,58,107,.4)}
-#to-top.show{opacity:1;visibility:visible;transform:none}
-#to-top:hover{background:var(--aqua);transform:translateY(-2px)}
-#to-top:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
+    /* Back to top */
+    #back-top { position: fixed; bottom: 28px; right: 28px; width: 46px; height: 46px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; z-index: 999; box-shadow: var(--shadow); border: none; }
+    #back-top.show { opacity: 1; pointer-events: auto; }
+    #back-top:hover { transform: translateY(-3px); }
 
-/* ─── UTILITIES ─── */
-.container{max-width:1160px;margin:0 auto;padding:0 24px}
-.section{padding:100px 0}
-.section-alt{background:var(--gray-bg)}
-.section-dark{background:var(--navy)}
-h1,h2,h3,h4{font-weight:800;line-height:1.15;letter-spacing:-.02em}
-h1{font-size:clamp(38px,5.5vw,66px)}
-h2{font-size:clamp(28px,3.8vw,46px)}
-h3{font-size:clamp(17px,2vw,22px)}
-h4{font-size:15px;font-weight:700}
-p{color:var(--gray-text);line-height:1.75}
-a{cursor:pointer}
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.vis { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: .1s; }
+    .reveal-d2 { transition-delay: .2s; }
+    .reveal-d3 { transition-delay: .3s; }
+    .reveal-d4 { transition-delay: .4s; }
+    @media (prefers-reduced-motion: reduce) { .reveal { transition: none; opacity: 1; transform: none; } }
 
-.label{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
-.label-blue{color:var(--aqua);background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.2)}
-.label-green{color:var(--green-dark);background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.2)}
-.label-white{color:rgba(255,255,255,.9);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0 24px; transition: background .3s, box-shadow .3s; }
+    #nav.scrolled { background: rgba(11,29,58,.97); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,.25); }
+    .nav-inner { max-width: 1160px; margin: 0 auto; height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo-text { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; line-height: 1.15; }
+    .nav-logo-text span { color: var(--aqua); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,.8); font-size: .9rem; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: color .2s, background .2s; }
+    .nav-links a:hover { color: #fff; background: rgba(255,255,255,.08); }
+    #hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+    #hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s; }
+    #hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #hamburger.open span:nth-child(2) { opacity: 0; }
+    #hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #mobile-menu { display: none; position: fixed; inset: 0; top: 70px; background: rgba(11,29,58,.98); backdrop-filter: blur(12px); z-index: 999; padding: 32px 24px; flex-direction: column; gap: 8px; }
+    #mobile-menu.open { display: flex; }
+    #mobile-menu a { color: rgba(255,255,255,.9); font-size: 1.1rem; font-weight: 500; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:var(--r-sm);font-size:14px;font-weight:700;font-family:inherit;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:all 180ms ease;white-space:nowrap;min-height:48px;letter-spacing:.01em}
-.btn-primary{background:var(--blue);color:var(--white);border-color:var(--blue)}
-.btn-primary:hover{background:#15305a;border-color:#15305a;box-shadow:0 6px 24px rgba(27,58,107,.4);transform:translateY(-1px)}
-.btn-primary:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
-.btn-green{background:var(--green);color:var(--white);border-color:var(--green)}
-.btn-green:hover{background:var(--green-dark);border-color:var(--green-dark);box-shadow:0 6px 24px rgba(46,204,113,.4);transform:translateY(-1px)}
-.btn-green:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-.btn-ghost-white{background:rgba(255,255,255,.08);color:var(--white);border-color:rgba(255,255,255,.25)}
-.btn-ghost-white:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5)}
-.btn-ghost-white:focus-visible{outline:3px solid var(--white);outline-offset:3px}
-.btn-outline{background:transparent;color:var(--blue);border-color:var(--blue)}
-.btn-outline:hover{background:var(--blue);color:var(--white)}
-.btn-outline:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.btn-white{background:var(--white);color:var(--navy);border-color:var(--white)}
-.btn-white:hover{background:var(--gray-bg);box-shadow:0 6px 24px rgba(0,0,0,.15);transform:translateY(-1px)}
-.btn-white:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
-.btn-lg{padding:17px 34px;font-size:15px;min-height:54px}
+    /* HERO */
+    #hero { min-height: 100vh; display: flex; align-items: center; padding-top: 70px; background: #08152b; position: relative; overflow: hidden; }
+    .hero-spline-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+    .hero-spline-bg spline-viewer { width: 100%; height: 100%; }
+    .hero-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to right,rgba(8,21,43,.88) 0%,rgba(8,21,43,.45) 35%,rgba(8,21,43,.2) 65%,rgba(8,21,43,.88) 100%), linear-gradient(to bottom,rgba(8,21,43,.35) 0%,transparent 40%,rgba(8,21,43,.9) 100%); }
+    .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding: 80px 0; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,184,217,.12); border: 1px solid rgba(0,184,217,.25); color: var(--aqua); font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 6px 14px; border-radius: 50px; margin-bottom: 24px; }
+    .hero-h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; color: #fff; margin-bottom: 20px; }
+    .hero-h1 .accent { color: var(--aqua); }
+    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,.75); margin-bottom: 16px; max-width: 520px; }
+    .hero-body { font-size: .95rem; color: rgba(255,255,255,.55); margin-bottom: 36px; max-width: 480px; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; }
+    .hero-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 20px; backdrop-filter: blur(16px); padding: 32px; }
+    .hero-flow-item { display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 12px; transition: background .2s; }
+    .hero-flow-item:hover { background: rgba(255,255,255,.05); }
+    .hero-flow-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; }
+    .hero-flow-text { color: rgba(255,255,255,.85); font-size: .9rem; font-weight: 500; }
+    .hero-flow-arrow { width: 2px; height: 16px; background: linear-gradient(to bottom,rgba(30,107,242,.5),rgba(0,184,217,.5)); margin: 0 0 0 27px; border-radius: 2px; }
 
-.text-center{text-align:center}
-.text-white{color:var(--white)!important}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    /* TRUST STRIP */
+    #trust { padding: 36px 0; background: var(--gray); border-top: 1px solid rgba(30,107,242,.08); border-bottom: 1px solid rgba(30,107,242,.08); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .trust-item { display: flex; align-items: center; gap: 12px; }
+    .trust-ico { width: 40px; height: 40px; background: rgba(30,107,242,.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .trust-txt { font-size: .88rem; color: var(--navy); font-weight: 500; line-height: 1.3; }
 
-/* ─── NAVBAR ─── */
-#nav{position:fixed;top:0;left:0;right:0;z-index:200;transition:all 250ms ease}
-#nav.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-mid);box-shadow:0 2px 20px rgba(13,31,60,.07)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1160px;margin:0 auto;padding:0 24px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:17px;color:var(--navy);letter-spacing:-.01em}
-.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--blue),var(--aqua));border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(27,58,107,.3)}
-#nav:not(.scrolled) .logo{color:var(--white)}
-.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
-.nav-links a{padding:8px 13px;font-size:14px;font-weight:600;color:var(--gray-text);text-decoration:none;border-radius:var(--r-sm);transition:all 150ms;cursor:pointer}
-#nav:not(.scrolled) .nav-links a{color:rgba(255,255,255,.75)}
-#nav:not(.scrolled) .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.1)}
-.nav-links a:hover{color:var(--navy);background:var(--gray-bg)}
-.nav-links a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
-.hamburger span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:all 200ms}
-#nav:not(.scrolled) .hamburger span{background:var(--white)}
-.mobile-menu{display:none;position:fixed;inset:70px 0 0;background:var(--white);z-index:190;padding:20px 24px;overflow-y:auto;border-top:1px solid var(--gray-mid)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:flex;align-items:center;padding:15px 0;font-size:16px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gray-mid)}
-.mobile-menu .btn{margin-top:20px;width:100%}
+    /* PROBLEM */
+    #problem { background: var(--white); }
+    .problem-header { max-width: 740px; }
+    .problem-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 52px; }
+    .problem-card { background: var(--gray); border-radius: var(--radius); padding: 28px; border-left: 3px solid transparent; transition: border-color .2s, box-shadow .2s; }
+    .problem-card:hover { border-color: var(--blue); box-shadow: var(--shadow); }
+    .problem-card-ico { font-size: 1.5rem; margin-bottom: 12px; }
+    .problem-card h4 { font-size: .95rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    .problem-card p { font-size: .87rem; color: var(--text-muted); line-height: 1.55; }
 
-/* ─── HERO ─── */
-#hero{min-height:100vh;display:flex;align-items:center;padding-top:70px;background:#08152b;position:relative;overflow:hidden}
-.hero-spline-bg{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.hero-spline-bg spline-viewer{width:100%;height:100%}
-.hero-spline-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:
-  linear-gradient(to right,rgba(8,21,43,.85) 0%,rgba(8,21,43,.4) 35%,rgba(8,21,43,.2) 65%,rgba(8,21,43,.85) 100%),
-  linear-gradient(to bottom,rgba(8,21,43,.3) 0%,transparent 40%,rgba(8,21,43,.85) 100%)}
-@keyframes blobFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.05)}}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2;padding:60px 0}
+    /* CONNECTED SYSTEM */
+    #system { background: var(--navy); }
+    #system .section-title { color: #fff; }
+    #system .section-sub { color: rgba(255,255,255,.65); }
+    .system-flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0; margin: 56px 0 48px; }
+    .flow-node { text-align: center; padding: 20px 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; min-width: 110px; transition: background .2s, border-color .2s; }
+    .flow-node.active, .flow-node:hover { background: rgba(30,107,242,.2); border-color: rgba(30,107,242,.5); }
+    .flow-node-ico { font-size: 1.6rem; margin-bottom: 8px; }
+    .flow-node-label { font-size: .78rem; color: rgba(255,255,255,.75); font-weight: 500; }
+    .flow-arrow { padding: 0 8px; color: var(--green); font-size: 1.2rem; font-weight: 700; }
+    .system-tagline { text-align: center; font-family: 'Sora',sans-serif; font-size: 1.15rem; font-weight: 600; color: rgba(255,255,255,.75); }
+    .system-tagline strong { color: var(--aqua); }
 
-/* hero left */
-.hero-live-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(46,204,113,.12);border:1px solid rgba(46,204,113,.25);color:rgba(255,255,255,.9);padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:28px}
-.live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:livePulse 2s ease infinite}
-@keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(46,204,113,.6)}70%{box-shadow:0 0 0 8px rgba(46,204,113,0)}}
-.hero-h1{color:var(--white);margin-bottom:6px}
-.hero-h1 .accent{background:linear-gradient(90deg,var(--aqua),#6ee7f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-h1 .accent-green{background:linear-gradient(90deg,var(--green),#7de8a8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:18px;color:rgba(255,255,255,.78);line-height:1.7;margin:20px 0 14px}
-.hero-body{font-size:15px;color:rgba(255,255,255,.52);margin-bottom:36px;line-height:1.75}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px}
-.hero-trust{display:flex;align-items:center;gap:20px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)}
-.trust-item{display:flex;flex-direction:column;gap:2px}
-.trust-num{font-size:22px;font-weight:800;color:var(--white)}
-.trust-label{font-size:12px;color:rgba(255,255,255,.45);font-weight:500}
-.trust-sep{width:1px;height:36px;background:rgba(255,255,255,.12)}
+    /* SERVICES */
+    #services { background: var(--white); }
+    .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
+    .service-card { background: var(--gray); border-radius: var(--radius); padding: 32px; border: 1px solid transparent; transition: all .25s; display: flex; flex-direction: column; }
+    .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow); background: #fff; }
+    .service-ico { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
+    .service-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .service-card p { font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6; }
+    .service-bullets { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+    .service-bullets li { font-size: .85rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+    .service-bullets li::before { content: ''; width: 6px; height: 6px; background: var(--green); border-radius: 50%; flex-shrink: 0; }
+    .service-link { margin-top: auto; font-size: .85rem; color: var(--blue); font-weight: 600; display: flex; align-items: center; gap: 5px; transition: gap .2s; }
+    .service-link:hover { gap: 8px; }
 
-/* hero right — glass flow */
-.hero-card{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-xl);padding:28px;box-shadow:0 24px 64px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.15)}
-.hero-card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.08)}
-.hero-card-title{font-size:13px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.09em}
-.hero-card-status{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--green)}
-.flow-row{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:var(--r-sm);margin-bottom:6px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.04);transition:background 200ms,border-color 200ms;cursor:default}
-.flow-row:last-child{margin-bottom:0}
-.flow-row:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.14)}
-.flow-row.active{background:rgba(0,180,216,.14);border-color:rgba(0,180,216,.4);box-shadow:0 0 0 1px rgba(0,180,216,.3),0 8px 24px rgba(0,180,216,.15);transform:translateX(4px)}
-.flow-row.active .flow-main{color:#fff}
-.flow-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.flow-txt{flex:1}
-.flow-main{font-size:13px;font-weight:700;color:rgba(255,255,255,.9)}
-.flow-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:1px}
-.flow-pill{font-size:10px;font-weight:700;padding:3px 9px;border-radius:100px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
-.pill-aqua{background:rgba(0,180,216,.2);color:var(--aqua-light)}
-.pill-green{background:rgba(46,204,113,.15);color:#5de88a}
-.pill-blue{background:rgba(100,140,220,.15);color:#8baef0}
-.flow-connector{display:flex;align-items:center;justify-content:flex-start;padding:0 28px;margin:2px 0}
-.flow-connector-line{width:2px;height:18px;background:linear-gradient(to bottom,rgba(0,180,216,.4),rgba(46,204,113,.2));border-radius:2px;margin-left:17px}
+    /* BOTTLENECK */
+    #bottleneck { background: var(--gray); }
+    .bottleneck-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; margin-top: 52px; }
+    .bottleneck-card { background: #fff; border-radius: var(--radius); padding: 28px 20px; text-align: center; border: 2px solid transparent; transition: all .25s; cursor: pointer; }
+    .bottleneck-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .bottleneck-ico { font-size: 2rem; margin-bottom: 14px; }
+    .bottleneck-card h4 { font-size: .95rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .bottleneck-card p { font-size: .78rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5; }
+    .bottleneck-tag { font-size: .72rem; font-weight: 600; color: var(--blue); background: rgba(30,107,242,.08); padding: 4px 10px; border-radius: 50px; }
+    .bottleneck-cta { text-align: center; margin-top: 40px; }
 
-/* ─── TRUST BAR ─── */
-#trust-bar{background:var(--navy);padding:20px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
-.trust-bar-item{display:flex;align-items:center;gap:10px;padding:10px 28px;border-right:1px solid rgba(255,255,255,.08)}
-.trust-bar-item:last-child{border-right:none}
-.trust-bar-icon{color:var(--aqua)}
-.trust-bar-text{font-size:13px;font-weight:600;color:rgba(255,255,255,.65)}
-.trust-bar-text strong{color:rgba(255,255,255,.9)}
+    /* PACKAGES */
+    #packages { background: var(--white); }
+    .packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; align-items: start; }
+    .pkg-card { background: var(--gray); border-radius: var(--radius); padding: 36px 28px; border: 2px solid transparent; position: relative; transition: all .25s; }
+    .pkg-card.popular { background: var(--navy); border-color: var(--blue); }
+    .pkg-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--green); color: #fff; font-size: .75rem; font-weight: 700; padding: 5px 16px; border-radius: 50px; white-space: nowrap; }
+    .pkg-name { font-family: 'Sora',sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .pkg-card.popular .pkg-name { color: #fff; }
+    .pkg-tagline { font-size: .85rem; color: var(--text-muted); margin-bottom: 24px; }
+    .pkg-card.popular .pkg-tagline { color: rgba(255,255,255,.6); }
+    .pkg-price-note { font-size: .8rem; color: var(--aqua); font-weight: 600; margin-bottom: 24px; }
+    .pkg-includes { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; }
+    .pkg-card.popular .pkg-includes { color: rgba(255,255,255,.5); }
+    .pkg-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+    .pkg-list li { font-size: .88rem; color: var(--text); display: flex; align-items: flex-start; gap: 10px; }
+    .pkg-card.popular .pkg-list li { color: rgba(255,255,255,.8); }
+    .pkg-list li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .pkg-msg { font-size: .85rem; font-style: italic; color: var(--text-muted); margin-bottom: 24px; }
+    .pkg-card.popular .pkg-msg { color: rgba(255,255,255,.55); }
+    .pkg-cta { width: 100%; text-align: center; display: block; padding: 14px; border-radius: 50px; font-family: 'Sora',sans-serif; font-size: .9rem; font-weight: 700; transition: all .22s; border: 2px solid var(--blue); color: var(--blue); background: transparent; cursor: pointer; }
+    .pkg-cta:hover { background: var(--blue); color: #fff; }
+    .pkg-card.popular .pkg-cta { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .pkg-card.popular .pkg-cta:hover { background: #155ee0; }
+    .pkg-note { text-align: center; margin-top: 32px; font-size: .88rem; color: var(--text-muted); }
 
-/* ─── PROBLEM ─── */
-.problem-intro{max-width:760px;margin:0 auto;text-align:center}
-.pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
-.pain-card{background:var(--white);border-radius:var(--r-md);padding:24px;border:1px solid var(--gray-mid);box-shadow:var(--shadow-sm);cursor:default;transition:all 200ms ease}
-.pain-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#c5d3e8}
-.pain-icon-wrap{width:44px;height:44px;border-radius:10px;background:rgba(229,57,53,.08);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-.pain-title{font-size:14px;font-weight:700;color:var(--text);line-height:1.4}
+    /* INDUSTRIES */
+    #industries { background: var(--navy); overflow: hidden; }
+    #industries .section-title { color: #fff; }
+    #industries .section-sub { color: rgba(255,255,255,.65); }
+    .marquee-wrap { margin-top: 48px; -webkit-mask-image: linear-gradient(to right,transparent 0,#000 12%,#000 88%,transparent 100%); mask-image: linear-gradient(to right,transparent 0,#000 12%,#000 88%,transparent 100%); overflow: hidden; }
+    .marquee-track { display: flex; gap: 14px; width: max-content; animation: scrollX 28s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes scrollX { to { transform: translateX(-50%); } }
+    .ind-chip { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 50px; padding: 10px 20px; white-space: nowrap; color: rgba(255,255,255,.85); font-size: .9rem; font-weight: 500; flex-shrink: 0; }
+    .industries-sub { text-align: center; margin-top: 40px; font-size: .9rem; color: rgba(255,255,255,.5); max-width: 620px; margin-left: auto; margin-right: auto; }
 
-/* ─── SOLUTION ─── */
-.solution-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.check-list{display:flex;flex-direction:column;gap:14px;margin-top:24px}
-.check-row{display:flex;gap:14px;align-items:flex-start}
-.check-icon{width:22px;height:22px;border-radius:50%;background:rgba(46,204,113,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.check-text{font-size:15px;color:var(--text);font-weight:500;line-height:1.5}
-.quote-block{margin-top:32px;padding:20px 24px;background:linear-gradient(135deg,rgba(27,58,107,.05),rgba(0,180,216,.05));border-left:3px solid var(--aqua);border-radius:0 var(--r-sm) var(--r-sm) 0}
-.quote-text{font-size:15px;font-weight:700;color:var(--navy);font-style:italic;line-height:1.5}
+    /* EXAMPLES */
+    #examples { background: var(--white); }
+    .examples-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 52px; }
+    .example-card { border-radius: var(--radius); padding: 36px; border: 1px solid rgba(30,107,242,.12); transition: all .25s; position: relative; overflow: hidden; }
+    .example-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--blue),var(--aqua)); }
+    .example-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+    .example-ico { font-size: 2.2rem; margin-bottom: 16px; }
+    .example-industry { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--aqua); margin-bottom: 8px; }
+    .example-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .example-card p { font-size: .9rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 20px; }
+    .example-flow { display: flex; flex-wrap: wrap; gap: 6px; }
+    .flow-tag { font-size: .75rem; background: var(--gray); color: var(--navy); padding: 4px 10px; border-radius: 50px; font-weight: 500; }
 
-/* solution ecosystem */
-.eco-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--gray-mid);box-shadow:var(--shadow-md)}
-.eco-header{background:linear-gradient(135deg,var(--navy),var(--blue));padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
-.eco-title{font-size:13px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em}
-.eco-status{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--green)}
-.eco-status-dot{width:7px;height:7px;background:var(--green);border-radius:50%}
-.eco-step{display:flex;align-items:center;gap:14px;padding:14px 22px;border-bottom:1px solid var(--gray-mid);transition:background 150ms;cursor:default}
-.eco-step:last-child{border-bottom:none}
-.eco-step:hover{background:rgba(27,58,107,.03)}
-.eco-num{width:30px;height:30px;border-radius:8px;background:var(--blue);color:var(--white);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.eco-num.done{background:var(--green)}
-.eco-body{flex:1}
-.eco-label{font-size:13px;font-weight:700;color:var(--text)}
-.eco-desc{font-size:11px;color:var(--gray-muted);margin-top:1px}
-.eco-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:100px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
-.badge-blue{background:rgba(27,58,107,.1);color:var(--blue)}
-.badge-aqua{background:rgba(0,180,216,.1);color:#0099bb}
-.badge-green{background:rgba(46,204,113,.12);color:var(--green-dark)}
+    /* HOW IT WORKS */
+    #how { background: var(--gray); }
+    .steps { display: flex; flex-direction: column; margin-top: 56px; max-width: 760px; margin-left: auto; margin-right: auto; }
+    .step { display: flex; gap: 28px; align-items: flex-start; }
+    .step-line { display: flex; flex-direction: column; align-items: center; }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: #fff; font-family: 'Sora',sans-serif; font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-connector { width: 2px; flex: 1; background: linear-gradient(to bottom,var(--blue),rgba(30,107,242,.1)); min-height: 40px; margin: 8px 0; }
+    .step:last-child .step-connector { display: none; }
+    .step-content { padding-bottom: 36px; }
+    .step-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; margin-top: 10px; }
+    .step-content p { font-size: .9rem; color: var(--text-muted); }
 
-/* ─── SERVICES ─── */
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
-.svc-card{background:var(--white);border-radius:var(--r-lg);padding:30px;border:1px solid var(--gray-mid);box-shadow:var(--shadow-sm);transition:all 220ms ease;cursor:default;position:relative;overflow:hidden}
-.svc-card::before{content:'';position:absolute;inset:0;opacity:0;background:linear-gradient(135deg,rgba(27,58,107,.03),rgba(0,180,216,.03));transition:opacity 220ms}
-.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-xl);border-color:#c0d0e8}
-.svc-card:hover::before{opacity:1}
-.svc-icon{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-.svc-card h3{margin-bottom:10px}
-.svc-card p{font-size:14px;margin-bottom:18px}
-.svc-list{list-style:none;display:flex;flex-direction:column;gap:7px}
-.svc-list li{font-size:13px;color:var(--gray-text);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
-.svc-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--aqua);flex-shrink:0;margin-top:6px}
+    /* WHY PGS */
+    #why { background: var(--navy); }
+    #why .section-title { color: #fff; }
+    .why-copy { color: rgba(255,255,255,.7); font-size: .95rem; line-height: 1.75; margin: 32px 0 48px; max-width: 640px; }
+    .why-copy strong { color: var(--aqua); }
+    .compare-table { width: 100%; border-collapse: collapse; border-radius: var(--radius); overflow: hidden; }
+    .compare-table thead tr { background: rgba(255,255,255,.06); }
+    .compare-table th { padding: 16px 24px; text-align: left; font-family: 'Sora',sans-serif; font-size: .85rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .compare-table th:first-child { color: rgba(255,255,255,.5); }
+    .compare-table th:last-child { color: var(--aqua); }
+    .compare-table td { padding: 14px 24px; font-size: .9rem; border-top: 1px solid rgba(255,255,255,.06); }
+    .compare-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+    .compare-table td:first-child { color: rgba(255,255,255,.5); }
+    .compare-table td:last-child { color: rgba(255,255,255,.85); }
+    .compare-check { color: var(--green); margin-right: 6px; font-weight: 700; }
 
-/* ─── HOW IT WORKS ─── */
-.steps-container{margin-top:60px;position:relative}
-.steps-line{position:absolute;top:28px;left:calc(10% + 28px);right:calc(10% + 28px);height:2px;background:linear-gradient(90deg,var(--blue),var(--aqua),var(--green));border-radius:2px;z-index:0}
-.steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;position:relative;z-index:1}
-.step-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 8px}
-.step-num{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--white);margin-bottom:18px;box-shadow:0 4px 16px rgba(27,58,107,.3);background:var(--blue);position:relative;z-index:2}
-.step-num.active{background:linear-gradient(135deg,var(--blue),var(--aqua));box-shadow:0 6px 24px rgba(0,180,216,.35)}
-.step-num.done{background:linear-gradient(135deg,var(--aqua),var(--green));box-shadow:0 6px 24px rgba(46,204,113,.3)}
-.step-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px}
-.step-desc{font-size:13px;color:var(--gray-text);line-height:1.6}
+    /* FREE AUDIT */
+    #audit { background: var(--white); }
+    .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-top: 16px; }
+    .audit-includes { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+    .audit-item { display: flex; align-items: flex-start; gap: 12px; }
+    .audit-item-ico { width: 36px; height: 36px; background: rgba(34,197,94,.1); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .audit-item-text h4 { font-size: .9rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+    .audit-item-text p { font-size: .83rem; color: var(--text-muted); }
+    .audit-form-wrap { border-radius: 20px; overflow: hidden; min-height: 691px; }
 
-/* ─── PACKAGES ─── */
-.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;align-items:start}
-.pkg{border-radius:var(--r-xl);padding:36px;border:2px solid var(--gray-mid);background:var(--white);position:relative;transition:all 220ms ease}
-.pkg:hover{box-shadow:var(--shadow-xl)}
-.pkg.featured{background:linear-gradient(160deg,var(--navy) 0%,#1a3a70 100%);border-color:#2d5090;transform:scale(1.03);box-shadow:var(--shadow-xl)}
-.pkg.featured:hover{transform:scale(1.03) translateY(-4px)}
-.pkg-ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--aqua),var(--aqua-light));color:var(--white);font-size:11px;font-weight:800;padding:4px 18px;border-radius:100px;white-space:nowrap;letter-spacing:.07em;text-transform:uppercase;box-shadow:0 4px 12px rgba(0,180,216,.4)}
-.pkg-tier{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-muted);margin-bottom:10px}
-.pkg.featured .pkg-tier{color:rgba(255,255,255,.45)}
-.pkg-name{font-size:24px;font-weight:800;color:var(--navy);margin-bottom:8px}
-.pkg.featured .pkg-name{color:var(--white)}
-.pkg-desc{font-size:14px;color:var(--gray-text);margin-bottom:24px;line-height:1.65}
-.pkg.featured .pkg-desc{color:rgba(255,255,255,.6)}
-.pkg-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.pkg-list li{font-size:14px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
-.pkg:not(.featured) .pkg-list li{color:var(--text)}
-.pkg.featured .pkg-list li{color:rgba(255,255,255,.85)}
-.pkg-list li svg{flex-shrink:0;margin-top:1px}
-.pkg-promise{font-size:13px;font-weight:700;padding:14px 16px;border-radius:var(--r-sm);margin-bottom:22px;line-height:1.5}
-.pkg:not(.featured) .pkg-promise{background:rgba(27,58,107,.06);color:var(--navy)}
-.pkg.featured .pkg-promise{background:rgba(255,255,255,.08);color:rgba(255,255,255,.9)}
-.pkg .btn{width:100%;justify-content:center}
+    /* CONTACT INFO */
+    #contact-info { background: var(--navy); padding: 64px 0; }
+    .contact-info-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; align-items: start; }
+    .contact-info-block h3 { font-family: 'Sora',sans-serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 16px; }
+    .contact-info-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+    .contact-ico { width: 36px; height: 36px; background: rgba(255,255,255,.08); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-detail-label { font-size: .75rem; color: rgba(255,255,255,.45); font-weight: 500; margin-bottom: 2px; }
+    .contact-detail-val { font-size: .9rem; color: rgba(255,255,255,.85); }
+    .contact-detail-val a { color: var(--aqua); }
+    .contact-detail-val a:hover { text-decoration: underline; }
 
-/* ─── INDUSTRIES (marquee) ─── */
-.marquee{margin-top:48px;position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.marquee:hover .marquee-track{animation-play-state:paused}
-.marquee-track{display:flex;gap:12px;width:max-content;animation:scrollX 38s linear infinite}
-.marquee-track.reverse{animation-direction:reverse;margin-top:12px;animation-duration:44s}
-@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.ind-chip{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--white);border:1px solid var(--gray-mid);border-radius:100px;font-size:14px;font-weight:600;color:var(--text);white-space:nowrap;box-shadow:var(--shadow-sm);transition:all 180ms ease;flex-shrink:0}
-.ind-chip:hover{border-color:var(--blue);color:var(--blue);background:rgba(27,58,107,.04);box-shadow:var(--shadow-md)}
-.ind-dot{width:7px;height:7px;border-radius:50%;background:var(--aqua);flex-shrink:0}
-@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+    /* FAQ */
+    #faq { background: var(--gray); }
+    .faq-list { max-width: 760px; margin: 52px auto 0; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: #fff; border-radius: var(--radius-sm); overflow: hidden; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; background: none; border: none; cursor: pointer; text-align: left; font-family: 'Sora',sans-serif; font-size: .95rem; font-weight: 600; color: var(--navy); }
+    .faq-q svg { flex-shrink: 0; transition: transform .3s; }
+    .faq-q[aria-expanded="true"] svg { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 24px 20px; font-size: .9rem; color: var(--text-muted); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
 
-/* ─── ABOUT ─── */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.pillar-list{display:flex;flex-direction:column;gap:18px;margin-top:32px}
-.pillar{display:flex;gap:16px;align-items:flex-start}
-.pillar-ico{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.pillar-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.pillar-desc{font-size:13px;color:var(--gray-text);line-height:1.6}
-.about-visual{background:linear-gradient(160deg,var(--gray-bg) 0%,rgba(27,58,107,.05) 100%);border-radius:var(--r-xl);padding:36px;border:1px solid var(--gray-mid)}
-.metric-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
-.metric-card{background:var(--white);border-radius:var(--r-md);padding:20px;border:1px solid var(--gray-mid);box-shadow:var(--shadow-sm)}
-.metric-num{font-size:28px;font-weight:800;color:var(--navy);line-height:1}
-.metric-label{font-size:12px;color:var(--gray-muted);margin-top:4px;font-weight:500}
-.metric-accent{color:var(--aqua)}
-.metric-green{color:var(--green)}
-.about-cta-box{background:linear-gradient(135deg,var(--blue),var(--navy));border-radius:var(--r-md);padding:24px;color:var(--white)}
-.about-cta-title{font-size:15px;font-weight:700;margin-bottom:8px}
-.about-cta-desc{font-size:13px;color:rgba(255,255,255,.65);margin-bottom:16px}
+    /* FINAL CTA */
+    #cta-final { background: linear-gradient(135deg,var(--navy) 0%,#0e2a54 50%,#0a1e3d 100%); padding: 96px 0; text-align: center; position: relative; overflow: hidden; }
+    #cta-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%,rgba(30,107,242,.2) 0%,transparent 70%); pointer-events: none; }
+    #cta-final h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: #fff; margin-bottom: 16px; position: relative; }
+    #cta-final p { font-size: 1.05rem; color: rgba(255,255,255,.65); max-width: 540px; margin: 0 auto 40px; position: relative; }
+    #cta-final .btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
 
-/* ─── FAQ ─── */
-.faq-wrap{max-width:760px;margin:48px auto 0;display:flex;flex-direction:column;gap:10px}
-.faq-item{border-radius:var(--r-md);border:1px solid var(--gray-mid);overflow:hidden;background:var(--white)}
-.faq-btn{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:var(--navy);transition:background 150ms;min-height:44px}
-.faq-btn:hover{background:var(--gray-bg)}
-.faq-btn:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
-.faq-chevron{width:20px;height:20px;flex-shrink:0;transition:transform 250ms ease;color:var(--gray-muted)}
-.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--blue)}
-.faq-body{display:none;padding:0 24px 20px;font-size:14px;color:var(--gray-text);line-height:1.75}
-.faq-item.open .faq-body{display:block}
-.faq-item.open .faq-btn{background:rgba(27,58,107,.03)}
+    /* FOOTER */
+    footer { background: #060f1e; padding: 64px 0 32px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .footer-brand p { font-size: .88rem; color: rgba(255,255,255,.45); margin: 14px 0 20px; line-height: 1.65; max-width: 280px; }
+    .footer-area { font-size: .8rem; color: rgba(255,255,255,.3); }
+    .footer-social { display: flex; gap: 10px; margin-top: 20px; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.06); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.6); transition: background .2s, color .2s; }
+    .footer-social a:hover { background: var(--blue); color: #fff; }
+    .footer-col h4 { font-family: 'Sora',sans-serif; font-size: .85rem; font-weight: 700; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: .88rem; color: rgba(255,255,255,.55); transition: color .2s; }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-bottom { padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { font-size: .8rem; color: rgba(255,255,255,.3); }
+    .footer-legal a:hover { color: rgba(255,255,255,.6); }
 
-/* ─── CTA SECTION ─── */
-#cta-section{background:linear-gradient(135deg,#08152b 0%,var(--navy) 50%,#132d55 100%);padding:100px 0;text-align:center;position:relative;overflow:hidden}
-#cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(0,180,216,.1) 0%,transparent 70%);pointer-events:none}
-#cta-section h2{color:var(--white);max-width:680px;margin:0 auto 16px;position:relative}
-#cta-section p{color:rgba(255,255,255,.65);max-width:540px;margin:0 auto 36px;font-size:17px;position:relative}
-.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
-
-/* ─── CONTACT ─── */
-#contact{background:var(--navy);padding:100px 0}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-.contact-info-item{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-.contact-ico{width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.contact-detail-label{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:2px}
-.contact-detail-val{font-size:15px;color:rgba(255,255,255,.85)}
-.contact-detail-val a{color:inherit;text-decoration:none;transition:color 150ms}
-.contact-detail-val a:hover{color:var(--aqua)}
-.contact-form{background:rgba(255,255,255,.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-xl);padding:36px}
-.form-group{margin-bottom:18px}
-.form-label{display:block;font-size:13px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:7px;letter-spacing:.01em}
-.form-input{width:100%;padding:13px 16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-sm);color:var(--white);font-size:15px;font-family:inherit;outline:none;transition:border-color 180ms,background 180ms;min-height:48px}
-.form-input::placeholder{color:rgba(255,255,255,.25)}
-.form-input:focus{border-color:var(--aqua);background:rgba(255,255,255,.1)}
-.form-input:focus-visible{outline:none;border-color:var(--aqua)}
-textarea.form-input{resize:vertical;min-height:110px}
-.form-submit{width:100%}
-.form-note{font-size:12px;color:rgba(255,255,255,.3);text-align:center;margin-top:12px}
-
-/* ─── FOOTER ─── */
-footer{background:#060f1e;color:rgba(255,255,255,.5);padding:64px 0 32px}
-.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.footer-brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;color:var(--white);margin-bottom:14px}
-.footer-brand-mark{width:32px;height:32px;background:linear-gradient(135deg,var(--blue),var(--aqua));border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.footer-desc{font-size:14px;line-height:1.75;max-width:280px;margin-bottom:20px}
-.footer-tagline{font-size:13px;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:.01em}
-.footer-tagline strong{color:rgba(255,255,255,.55)}
-.footer-col-title{font-size:11px;font-weight:800;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
-.footer-links a{font-size:14px;color:rgba(255,255,255,.45);text-decoration:none;transition:color 150ms;cursor:pointer}
-.footer-links a:hover{color:rgba(255,255,255,.9)}
-.footer-links a:focus-visible{outline:3px solid var(--aqua);outline-offset:2px;border-radius:3px}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.footer-copy{font-size:13px}
-.footer-loc{font-size:13px;display:flex;align-items:center;gap:6px}
-
-/* ─── ANIMATIONS ─── */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 600ms cubic-bezier(.22,1,.36,1),transform 600ms cubic-bezier(.22,1,.36,1)}
-.reveal.vis{opacity:1;transform:none}
-.reveal-d1{transition-delay:80ms}
-.reveal-d2{transition-delay:160ms}
-.reveal-d3{transition-delay:240ms}
-.reveal-d4{transition-delay:320ms}
-
-/* ─── RESPONSIVE ─── */
-@media(max-width:1024px){
-  .hero-grid,.solution-wrap,.about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
-  .hero-card{max-width:500px}
-  .services-grid,.pkg-grid{grid-template-columns:1fr}
-  .pain-grid{grid-template-columns:repeat(2,1fr)}
-  .steps-grid{grid-template-columns:1fr;gap:28px}
-  .steps-line{display:none}
-  .step-item{flex-direction:row;text-align:left;gap:18px}
-  .step-num{margin-bottom:0;flex-shrink:0}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .pkg.featured{transform:none}
-  .pkg.featured:hover{transform:translateY(-4px)}
-  .trust-bar-inner{justify-content:flex-start;overflow-x:auto}
-  .pkg-grid{max-width:480px;margin-left:auto;margin-right:auto}
-}
-@media(max-width:768px){
-  .section{padding:60px 0}
-  #hero{padding-top:70px;min-height:auto}
-  .hero-grid{padding:36px 0;gap:36px}
-  .nav-links,.nav-cta .btn:not(.btn-green){display:none}
-  .nav-cta .btn-green{padding:9px 16px;font-size:12px}
-  .hamburger{display:flex}
-  .services-grid{grid-template-columns:1fr}
-  .pain-grid{grid-template-columns:1fr 1fr;gap:12px}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
-  h1{font-size:clamp(32px,8.5vw,40px)}
-  h2{font-size:clamp(24px,6vw,30px)}
-  .hero-sub{font-size:16px}
-  .hero-trust{gap:12px 16px;flex-wrap:wrap}
-  .trust-sep{display:none}
-  .trust-item{flex:0 0 calc(50% - 8px)}
-  .metric-row{grid-template-columns:1fr 1fr}
-  /* Trust bar → stacked, no awkward borders */
-  #trust-bar{padding:14px 0}
-  .trust-bar-inner{flex-direction:column;align-items:stretch;gap:0}
-  .trust-bar-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);padding:11px 4px;justify-content:flex-start}
-  .trust-bar-item:last-child{border-bottom:none}
-  /* Hero glass card tighter */
-  .hero-card{padding:20px;max-width:100%}
-  .flow-row{padding:11px 13px;gap:10px}
-  .flow-main{font-size:12px}
-  .flow-sub{font-size:10px}
-  .flow-ico{width:32px;height:32px}
-  .pkg{padding:28px}
-  .contact-form{padding:26px}
-  .solution-wrap,.about-grid,.contact-grid{gap:36px}
-}
-@media(max-width:480px){
-  .container{padding:0 18px}
-  .section{padding:52px 0}
-  .pain-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr;gap:28px}
-  .hero-btns,.cta-btns{flex-direction:column}
-  .hero-btns .btn,.cta-btns .btn{width:100%}
-  .metric-row{grid-template-columns:1fr 1fr;gap:12px}
-  .metric-card{padding:16px}
-  .metric-num{font-size:24px}
-  .label{font-size:11px;padding:4px 12px}
-  .quote-block{padding:16px 18px}
-  .eco-step,.eco-header{padding-left:16px;padding-right:16px}
-  .eco-desc{display:none}
-  .ind-chip{font-size:13px;padding:9px 16px}
-  #to-top{bottom:18px;right:18px;width:44px;height:44px}
-  .pkg.featured{transform:none}
-  .hero-card{padding:16px}
-  .flow-pill{display:none}
-  .hero-live-badge{font-size:12px;padding:6px 12px}
-}
-/* Touch devices — show hover-equivalent states, disable lift transforms */
-@media(hover:none){
-  .svc-card:hover,.pain-card:hover,.ind-chip:hover,.pkg:hover{transform:none}
-  .btn:hover{transform:none}
-}
-</style>
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2,1fr); }
+      .bottleneck-grid { grid-template-columns: repeat(3,1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 64px 0; }
+      .nav-links, .nav-cta { display: none; }
+      #hamburger { display: flex; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+      .hero-card { display: none; }
+      .hero-h1 { font-size: 2rem; }
+      .trust-grid { grid-template-columns: 1fr 1fr; }
+      .problem-grid { grid-template-columns: 1fr 1fr; }
+      .system-flow { gap: 4px; }
+      .flow-node { min-width: 80px; padding: 14px 10px; }
+      .flow-node-label { font-size: .7rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .bottleneck-grid { grid-template-columns: 1fr 1fr; }
+      .packages-grid { grid-template-columns: 1fr; }
+      .examples-grid { grid-template-columns: 1fr; }
+      .audit-grid { grid-template-columns: 1fr; }
+      .contact-info-grid { grid-template-columns: 1fr; }
+      .compare-table { display: block; overflow-x: auto; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .trust-grid { grid-template-columns: 1fr; }
+      .problem-grid { grid-template-columns: 1fr; }
+      .bottleneck-grid { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns .btn { width: 100%; justify-content: center; }
+    }
+  </style>
 </head>
 <body>
 
-<div id="scroll-progress" aria-hidden="true"></div>
+<div id="scroll-bar"></div>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="#hero" class="logo" aria-label="Pacific Growth Systems home">
-      <div class="logo-mark" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 15L6.5 8.5l3.5 4 4.5-6.5L18 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="10" r="2.5" fill="#2ECC71"/></svg>
-      </div>
-      <span>Pacific Growth Systems</span>
+    <a href="#hero" class="nav-logo" aria-label="Pacific Growth Systems home">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="36" height="36" rx="9" fill="#1E6BF2"/>
+        <circle cx="15" cy="15" r="2" fill="#00B8D9"/>
+        <circle cx="21" cy="15" r="2" fill="#00B8D9"/>
+        <circle cx="18" cy="21" r="2" fill="#22C55E"/>
+        <line x1="15" y1="15" x2="21" y2="15" stroke="white" stroke-width="1.2" opacity=".4"/>
+        <line x1="15" y1="15" x2="18" y2="21" stroke="white" stroke-width="1.2" opacity=".4"/>
+        <line x1="21" y1="15" x2="18" y2="21" stroke="white" stroke-width="1.2" opacity=".4"/>
+        <path d="M11 27l2.5-4 4.5 2 4.5-2 2.5 4H11z" fill="#22C55E" opacity=".7"/>
+      </svg>
+      <div class="nav-logo-text">Pacific <span>Growth</span><br>Systems</div>
     </a>
-    <ul class="nav-links" role="list">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#packages">Packages</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px">
-      <a href="#cta-section" class="btn btn-green" style="padding:10px 20px;font-size:13px;min-height:40px">Book a Free Growth Audit</a>
-      <button class="hamburger" id="ham" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#how">How It Works</a>
+      <a href="#packages">Packages</a>
+      <a href="#audit">Contact</a>
     </div>
+    <div class="nav-cta">
+      <a href="#audit" class="btn btn-primary">Book a Free Audit</a>
+    </div>
+    <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
-  <a href="#services" onclick="closeMob()">Services</a>
-  <a href="#how-it-works" onclick="closeMob()">How It Works</a>
-  <a href="#packages" onclick="closeMob()">Packages</a>
-  <a href="#industries" onclick="closeMob()">Industries</a>
-  <a href="#about" onclick="closeMob()">About</a>
-  <a href="#contact" onclick="closeMob()">Contact</a>
-  <a href="#cta-section" class="btn btn-green" onclick="closeMob()">Book a Free Growth Audit</a>
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#services">Services</a>
+  <a href="#industries">Industries</a>
+  <a href="#how">How It Works</a>
+  <a href="#packages">Packages</a>
+  <a href="#audit">Contact</a>
+  <a href="#audit" class="btn btn-primary" style="margin-top:16px;justify-content:center;">Book a Free Audit</a>
 </div>
 
 <!-- HERO -->
@@ -465,132 +402,53 @@ footer{background:#060f1e;color:rgba(255,255,255,.5);padding:64px 0 32px}
   <div class="hero-spline-bg" aria-hidden="true">
     <spline-viewer url="https://prod.spline.design/us3ALejTXl6usHZ7/scene.splinecode" loading="lazy"></spline-viewer>
   </div>
-  <div class="hero-spline-overlay" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-grid">
-      <!-- LEFT -->
       <div>
-        <div class="hero-live-badge">
-          <span class="live-dot" aria-hidden="true"></span>
-          Now serving Burnaby, BC &amp; Metro Vancouver
+        <div class="hero-eyebrow">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="5" cy="5" r="1.5" fill="currentColor"/></svg>
+          Now serving Burnaby &amp; Metro Vancouver
         </div>
-        <h1 class="hero-h1" id="hero-h1">
-          AI Growth Systems<br>for <span class="accent">Local Businesses</span>
-        </h1>
-        <p class="hero-sub">Turn content into conversations, conversations into leads, and leads into <span style="color:var(--green);font-weight:700">booked appointments.</span></p>
-        <p class="hero-body">Pacific Growth Systems builds connected AI-powered systems that help local businesses capture more leads, follow up faster, stay visible online, and organize their sales process.</p>
+        <h1 class="hero-h1" id="hero-h1">AI Growth Systems<br>for <span class="accent">Local Businesses</span></h1>
+        <p class="hero-sub">Turn content into conversations, conversations into leads, and leads into booked appointments with AI-powered CRM, automation, and content systems.</p>
+        <p class="hero-body">We help local businesses connect content creation, AI chat agents, CRM, lead capture, and follow-up automation into one organized system for growth.</p>
         <div class="hero-btns">
-          <a href="#cta-section" class="btn btn-green btn-lg">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l7 4.5L16 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            Book a Free Growth Audit
-          </a>
-          <a href="#services" class="btn btn-ghost-white btn-lg">
-            Explore Systems
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-        <div class="hero-trust" role="list" aria-label="Key facts">
-          <div class="trust-item" role="listitem">
-            <span class="trust-num">AI</span>
-            <span class="trust-label">Powered CRM</span>
-          </div>
-          <div class="trust-sep" aria-hidden="true"></div>
-          <div class="trust-item" role="listitem">
-            <span class="trust-num">5+</span>
-            <span class="trust-label">Growth Systems</span>
-          </div>
-          <div class="trust-sep" aria-hidden="true"></div>
-          <div class="trust-item" role="listitem">
-            <span class="trust-num">24/7</span>
-            <span class="trust-label">AI Response</span>
-          </div>
-          <div class="trust-sep" aria-hidden="true"></div>
-          <div class="trust-item" role="listitem">
-            <span class="trust-num">BC</span>
-            <span class="trust-label">Based in Canada</span>
-          </div>
+          <a href="#audit" class="btn btn-primary btn-lg">Book a Free 20-Min Growth Audit</a>
+          <a href="#system" class="btn btn-outline">See How It Works</a>
         </div>
       </div>
-      <!-- RIGHT — glass flow -->
       <div>
-        <div class="hero-card" role="img" aria-label="Connected Growth System flow diagram">
-          <div class="hero-card-header">
-            <span class="hero-card-title">Connected Growth System</span>
-            <div class="hero-card-status">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><circle cx="5" cy="5" r="4" fill="currentColor" opacity=".3"/><circle cx="5" cy="5" r="2" fill="currentColor"/></svg>
-              All Systems Active
-            </div>
+        <div class="hero-card">
+          <div style="font-family:'Sora',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:8px;">Connected Growth System</div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(30,107,242,.2);">📝</div>
+            <div class="hero-flow-text">Strategic Content</div>
           </div>
-
-          <div class="flow-row">
-            <div class="flow-ico" style="background:rgba(0,180,216,.15)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="9" rx="2" stroke="#00B4D8" stroke-width="1.4"/><path d="M2 8h14M5 14h8M9 11v3" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">Content on Social Media</div>
-              <div class="flow-sub">Generates visibility &amp; interactions</div>
-            </div>
-            <span class="flow-pill pill-aqua">REACH</span>
+          <div class="hero-flow-arrow"></div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(0,184,217,.2);">💬</div>
+            <div class="hero-flow-text">AI Chat Agent</div>
           </div>
-          <div class="flow-connector" aria-hidden="true"><div class="flow-connector-line"></div></div>
-
-          <div class="flow-row">
-            <div class="flow-ico" style="background:rgba(100,140,220,.12)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 10.5A7 7 0 113 7" stroke="#8baef0" stroke-width="1.4" stroke-linecap="round"/><path d="M14 5.5v5h-5" stroke="#8baef0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">Message, Form or Interaction</div>
-              <div class="flow-sub">Lead captured from any channel</div>
-            </div>
-            <span class="flow-pill pill-blue">CAPTURE</span>
+          <div class="hero-flow-arrow"></div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(30,107,242,.2);">🎯</div>
+            <div class="hero-flow-text">Lead Capture</div>
           </div>
-          <div class="flow-connector" aria-hidden="true"><div class="flow-connector-line"></div></div>
-
-          <div class="flow-row">
-            <div class="flow-ico" style="background:rgba(0,180,216,.15)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6.5" stroke="#00B4D8" stroke-width="1.4"/><path d="M6.5 9h5M9 6.5v5" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">AI Agent Responds &amp; Qualifies</div>
-              <div class="flow-sub">Instant response, 24/7</div>
-            </div>
-            <span class="flow-pill pill-aqua">AI</span>
+          <div class="hero-flow-arrow"></div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(0,184,217,.2);">🗂️</div>
+            <div class="hero-flow-text">CRM &amp; Pipeline</div>
           </div>
-          <div class="flow-connector" aria-hidden="true"><div class="flow-connector-line"></div></div>
-
-          <div class="flow-row">
-            <div class="flow-ico" style="background:rgba(100,140,220,.12)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="11" rx="2" stroke="#8baef0" stroke-width="1.4"/><path d="M2 8h14M5.5 4V2.5M12.5 4V2.5" stroke="#8baef0" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">CRM Registers the Opportunity</div>
-              <div class="flow-sub">Organized, tracked, assigned</div>
-            </div>
-            <span class="flow-pill pill-blue">CRM</span>
+          <div class="hero-flow-arrow"></div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(34,197,94,.2);">⚡</div>
+            <div class="hero-flow-text">Follow-Up Automation</div>
           </div>
-          <div class="flow-connector" aria-hidden="true"><div class="flow-connector-line"></div></div>
-
-          <div class="flow-row">
-            <div class="flow-ico" style="background:rgba(46,204,113,.12)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10 4.5l5 4.5-5 4.5" stroke="#2ECC71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">Automation Follows Up</div>
-              <div class="flow-sub">No lead goes cold</div>
-            </div>
-            <span class="flow-pill pill-green">AUTO</span>
-          </div>
-          <div class="flow-connector" aria-hidden="true"><div class="flow-connector-line"></div></div>
-
-          <div class="flow-row" style="border-color:rgba(46,204,113,.15);background:rgba(46,204,113,.06)">
-            <div class="flow-ico" style="background:rgba(46,204,113,.15)" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6.5" r="2.5" stroke="#2ECC71" stroke-width="1.4"/><path d="M3.5 15.5c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <div class="flow-txt">
-              <div class="flow-main">Appointment, Proposal or Sale</div>
-              <div class="flow-sub" style="color:rgba(46,204,113,.7)">Revenue with full control</div>
-            </div>
-            <span class="flow-pill pill-green">CLOSE</span>
+          <div class="hero-flow-arrow"></div>
+          <div class="hero-flow-item">
+            <div class="hero-flow-icon" style="background:rgba(34,197,94,.2);">📅</div>
+            <div class="hero-flow-text">Booked Appointment</div>
           </div>
         </div>
       </div>
@@ -598,591 +456,568 @@ footer{background:#060f1e;color:rgba(255,255,255,.5);padding:64px 0 32px}
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div id="trust-bar" role="region" aria-label="Why businesses choose us">
+<!-- TRUST STRIP -->
+<section id="trust" aria-label="Trust indicators">
   <div class="container">
-    <div class="trust-bar-inner">
-      <div class="trust-bar-item">
-        <svg class="trust-bar-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l1.854 4.236L16 7.09l-3.637 3.545.858 5.01L9 13.236l-4.221 2.409.858-5.01L2 7.09l5.146-.854L9 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="trust-bar-text"><strong>Connected Systems</strong> — not scattered tools</span>
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <div class="trust-ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l1.8 5.4H17l-4.5 3.3 1.7 5.3L10 13l-4.2 3 1.7-5.3L3 7.4h5.2L10 2z" fill="#1E6BF2"/></svg>
+        </div>
+        <div class="trust-txt">Built for local businesses in Burnaby &amp; Metro Vancouver</div>
       </div>
-      <div class="trust-bar-item">
-        <svg class="trust-bar-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M9 5.5v3.5l2.5 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        <span class="trust-bar-text"><strong>24/7 AI agents</strong> — respond instantly</span>
+      <div class="trust-item reveal reveal-d1">
+        <div class="trust-ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="3" stroke="#1E6BF2" stroke-width="1.6"/><path d="M7 10h6M10 7v6" stroke="#1E6BF2" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="trust-txt">AI + CRM + Automation + Content — all in one system</div>
       </div>
-      <div class="trust-bar-item">
-        <svg class="trust-bar-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2a7 7 0 100 14A7 7 0 009 2z" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="trust-bar-text"><strong>CRM + Automation</strong> — every lead tracked</span>
+      <div class="trust-item reveal reveal-d2">
+        <div class="trust-ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#1E6BF2" stroke-width="1.6"/><path d="M7 10l2 2 4-4" stroke="#1E6BF2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="trust-txt">Designed for service businesses, realtors, clinics &amp; contractors</div>
       </div>
-      <div class="trust-bar-item">
-        <svg class="trust-bar-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 15l4-4 3 3 4-5.5 4 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="trust-bar-text"><strong>Content that sells</strong> — not just posts</span>
-      </div>
-      <div class="trust-bar-item">
-        <svg class="trust-bar-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 9.5L6 13l10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="trust-bar-text"><strong>Burnaby, BC</strong> — locally based</span>
+      <div class="trust-item reveal reveal-d3">
+        <div class="trust-ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v7l4 2" stroke="#1E6BF2" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="10" r="7" stroke="#1E6BF2" stroke-width="1.6"/></svg>
+        </div>
+        <div class="trust-txt">Book a free growth audit before building your system</div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- PROBLEM -->
-<section class="section section-alt" id="problem" aria-labelledby="problem-h2">
+<section id="problem" aria-labelledby="problem-h2">
   <div class="container">
-    <div class="problem-intro reveal">
-      <div class="label label-blue">The Real Problem</div>
-      <h2 id="problem-h2">Most businesses do not lose leads because people are not interested. They lose them because follow-up is <em style="color:var(--blue);font-style:normal">slow, scattered, or inconsistent.</em></h2>
-      <p class="reveal reveal-d1" style="margin-top:16px;font-size:17px">Many local businesses receive messages, calls, forms, and social media interactions every week — but those opportunities get lost between platforms, team members, and manual follow-up.</p>
+    <div class="problem-header reveal">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title" id="problem-h2">Most businesses don't lose leads because people aren't interested. They lose them because follow-up is slow, scattered, or inconsistent.</h2>
+      <p class="section-sub" style="margin-top:16px;">Your prospects may contact you through forms, social media, calls, email, or ads. But without a clear system, leads get forgotten, conversations go cold, and your team loses track of real opportunities.</p>
     </div>
-    <div class="pain-grid">
-      <div class="pain-card reveal reveal-d1">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2a9 9 0 100 18A9 9 0 0011 2z" stroke="#E53E3E" stroke-width="1.5"/><path d="M11 7v4.5l3 3" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="pain-title">Slow response times</div>
+    <div class="problem-grid">
+      <div class="problem-card reveal reveal-d1">
+        <div class="problem-card-ico" aria-hidden="true">📡</div>
+        <h4>Leads from too many channels</h4>
+        <p>DMs, forms, calls, and emails arriving with no unified inbox or process.</p>
       </div>
-      <div class="pain-card reveal reveal-d2">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 6h14M4 10h14M4 14h10" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="pain-title">Leads from too many channels</div>
+      <div class="problem-card reveal reveal-d2">
+        <div class="problem-card-ico" aria-hidden="true">⏱️</div>
+        <h4>Slow response times</h4>
+        <p>Every hour that passes without a reply lowers your chance of converting that lead.</p>
       </div>
-      <div class="pain-card reveal reveal-d3">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="5" width="16" height="14" rx="2" stroke="#E53E3E" stroke-width="1.5"/><path d="M3 9h16M7 5V3M15 5V3" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/><path d="M8 14l6-1" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="pain-title">No clear follow-up process</div>
+      <div class="problem-card reveal reveal-d3">
+        <div class="problem-card-ico" aria-hidden="true">🗂️</div>
+        <h4>No clear follow-up process</h4>
+        <p>No one on the team knows exactly what the next step is for each prospect.</p>
       </div>
-      <div class="pain-card reveal reveal-d4">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="pain-title">Prospects forgotten in inboxes</div>
+      <div class="problem-card reveal reveal-d1">
+        <div class="problem-card-ico" aria-hidden="true">🔌</div>
+        <h4>Disconnected tools</h4>
+        <p>DMs, emails, forms, and calls living in separate places with no connection.</p>
       </div>
-      <div class="pain-card reveal reveal-d1">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="6" width="16" height="12" rx="2" stroke="#E53E3E" stroke-width="1.5"/><path d="M3 10h16M8 6V4M14 6V4" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="pain-title">No CRM or poor CRM usage</div>
+      <div class="problem-card reveal reveal-d2">
+        <div class="problem-card-ico" aria-hidden="true">📊</div>
+        <h4>No CRM or poor CRM usage</h4>
+        <p>Leads tracked in spreadsheets or lost in inboxes instead of a real sales pipeline.</p>
       </div>
-      <div class="pain-card reveal reveal-d2">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M12 2L4 13h8l-2 7 10-12h-8l2-6z" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="pain-title">Content not connected to sales</div>
-      </div>
-      <div class="pain-card reveal reveal-d3">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="pain-title">Team unsure of next steps</div>
-      </div>
-      <div class="pain-card reveal reveal-d4">
-        <div class="pain-icon-wrap" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M10 3H3v7l9 9 7-7-9-9zM6 8a1 1 0 110-2 1 1 0 010 2z" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 12l-2 2M14 17l-2 2" stroke="#E53E3E" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="pain-title">Missed appointments &amp; lost opportunities</div>
+      <div class="problem-card reveal reveal-d3">
+        <div class="problem-card-ico" aria-hidden="true">📱</div>
+        <h4>Content not connected to sales</h4>
+        <p>Posts get views but no leads, because there's no system to capture that attention.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SOLUTION -->
-<section class="section" id="solution" aria-labelledby="solution-h2">
+<!-- CONNECTED GROWTH SYSTEM -->
+<section id="system" aria-labelledby="system-h2">
   <div class="container">
-    <div class="solution-wrap">
-      <div>
-        <div class="label label-blue">Our Solution</div>
-        <h2 id="solution-h2" class="reveal">We connect your content, leads, CRM, AI agents, and follow-up into <em style="color:var(--blue);font-style:normal">one growth system.</em></h2>
-        <p class="reveal reveal-d1" style="margin-top:16px">Pacific Growth Systems builds AI-powered systems that help your business attract attention, start conversations, capture leads, qualify prospects, and move every opportunity through a clear sales process.</p>
-        <div class="check-list reveal reveal-d2">
-          <div class="check-row">
-            <div class="check-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="check-text">Your content creates conversations</span>
-          </div>
-          <div class="check-row">
-            <div class="check-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="check-text">Your AI agent responds and qualifies instantly, 24/7</span>
-          </div>
-          <div class="check-row">
-            <div class="check-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="check-text">Your CRM organizes and tracks every opportunity</span>
-          </div>
-          <div class="check-row">
-            <div class="check-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="check-text">Your automations follow up automatically — no lead forgotten</span>
-          </div>
-          <div class="check-row">
-            <div class="check-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="check-text">Your team knows exactly what to do next</span>
-          </div>
-        </div>
-        <div class="quote-block reveal reveal-d3">
-          <p class="quote-text">"We do not just create content. We connect your content to a sales system."</p>
-        </div>
+    <div class="text-center reveal">
+      <div class="section-label">The Solution</div>
+      <h2 class="section-title" id="system-h2">One connected system for content, leads, AI, CRM, and follow-up.</h2>
+      <p class="section-sub">Pacific Growth Systems connects the tools and workflows your business needs to attract attention, capture leads, respond faster, qualify prospects, and move every opportunity toward an appointment or sale.</p>
+    </div>
+    <div class="system-flow reveal reveal-d1" role="list" aria-label="Growth system flow">
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">📝</div>
+        <div class="flow-node-label">Content</div>
       </div>
-
-      <!-- Ecosystem visual -->
-      <div class="eco-card reveal reveal-d2">
-        <div class="eco-header">
-          <span class="eco-title">Content + AI + CRM + Automation</span>
-          <div class="eco-status">
-            <span class="eco-status-dot" aria-hidden="true"></span>
-            Connected Growth
-          </div>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">1</div>
-          <div class="eco-body"><div class="eco-label">Content on Social Media</div><div class="eco-desc">Visibility &amp; brand awareness</div></div>
-          <span class="eco-badge badge-aqua">REACH</span>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">2</div>
-          <div class="eco-body"><div class="eco-label">Message, Form or Interaction</div><div class="eco-desc">Multi-channel lead capture</div></div>
-          <span class="eco-badge badge-blue">CAPTURE</span>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">3</div>
-          <div class="eco-body"><div class="eco-label">AI Agent Qualifies</div><div class="eco-desc">Instant 24/7 response</div></div>
-          <span class="eco-badge badge-aqua">AI</span>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">4</div>
-          <div class="eco-body"><div class="eco-label">CRM Registers Opportunity</div><div class="eco-desc">Organized sales pipeline</div></div>
-          <span class="eco-badge badge-blue">CRM</span>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">5</div>
-          <div class="eco-body"><div class="eco-label">Automation Follows Up</div><div class="eco-desc">No lead forgotten</div></div>
-          <span class="eco-badge badge-blue">AUTO</span>
-        </div>
-        <div class="eco-step">
-          <div class="eco-num" aria-hidden="true">6</div>
-          <div class="eco-body"><div class="eco-label">Team Gets Notified</div><div class="eco-desc">Right person, right time</div></div>
-          <span class="eco-badge badge-aqua">ALERT</span>
-        </div>
-        <div class="eco-step" style="background:rgba(46,204,113,.04)">
-          <div class="eco-num done" aria-hidden="true">7</div>
-          <div class="eco-body"><div class="eco-label">Appointment or Sale</div><div class="eco-desc">Measurable commercial results</div></div>
-          <span class="eco-badge badge-green">CLOSE</span>
-        </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">💬</div>
+        <div class="flow-node-label">Message / Form</div>
       </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">🤖</div>
+        <div class="flow-node-label">AI Agent</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">🗂️</div>
+        <div class="flow-node-label">CRM</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">⚡</div>
+        <div class="flow-node-label">Automation</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">🔔</div>
+        <div class="flow-node-label">Team Alert</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="flow-node" role="listitem">
+        <div class="flow-node-ico" aria-hidden="true">📅</div>
+        <div class="flow-node-label">Appointment</div>
+      </div>
+    </div>
+    <div class="system-tagline reveal reveal-d2">
+      <strong>Content + AI + CRM + Automation</strong> = Connected Growth
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section section-alt" id="services" aria-labelledby="services-h2">
+<section id="services" aria-labelledby="services-h2">
   <div class="container">
-    <div class="text-center reveal" style="max-width:640px;margin:0 auto">
-      <div class="label label-blue">Our Services</div>
-      <h2 id="services-h2">Growth systems built with AI, CRM, automation, and strategic content.</h2>
+    <div class="reveal">
+      <div class="section-label">Services</div>
+      <h2 class="section-title" id="services-h2">Growth systems built with AI, CRM, automation, and strategic content.</h2>
     </div>
     <div class="services-grid">
-      <div class="svc-card reveal reveal-d1">
-        <div class="svc-icon" style="background:rgba(27,58,107,.08)" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="2.5" stroke="#1B3A6B" stroke-width="1.6"/><path d="M3 10h18M8 6V4M16 6V4M7 15h4M7 18h6" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-ico" style="background:rgba(30,107,242,.1);" aria-hidden="true">🗂️</div>
         <h3>AI CRM &amp; Sales Automation</h3>
-        <p>Organize your leads, conversations, and opportunities so your team knows what to do, when to follow up, and which prospects are closest to buying.</p>
-        <ul class="svc-list" aria-label="Includes">
+        <p>Organize your leads, conversations, and opportunities inside a CRM your team can actually use.</p>
+        <ul class="service-bullets">
           <li>CRM setup &amp; pipeline design</li>
-          <li>Lead stages &amp; follow-up reminders</li>
-          <li>Sales automation &amp; team notifications</li>
-          <li>Conversion tracking &amp; templates</li>
+          <li>Lead stages &amp; team reminders</li>
+          <li>Follow-up automation</li>
+          <li>Conversion tracking</li>
         </ul>
+        <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
-      <div class="svc-card reveal reveal-d2">
-        <div class="svc-icon" style="background:rgba(0,180,216,.08)" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 7v6c0 5.25 3.85 10.15 9 11.33C18.15 23.15 22 18.25 22 13V7L12 3z" stroke="#00B4D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#00B4D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-ico" style="background:rgba(0,184,217,.1);" aria-hidden="true">🎯</div>
         <h3>AI Lead Capture</h3>
-        <p>Capture leads from your website, forms, social media, ads, or campaigns and send them directly into your CRM or sales team automatically.</p>
-        <ul class="svc-list" aria-label="Includes">
+        <p>Capture leads from your website, forms, social media, campaigns, and landing pages.</p>
+        <ul class="service-bullets">
           <li>Landing pages &amp; smart forms</li>
-          <li>CRM integration &amp; automatic notifications</li>
-          <li>Lead qualification &amp; appointment booking</li>
-          <li>Basic opportunity tracking</li>
+          <li>Lead capture flows</li>
+          <li>CRM integration</li>
+          <li>Team notifications &amp; appointment booking</li>
         </ul>
+        <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
-      <div class="svc-card reveal reveal-d3">
-        <div class="svc-icon" style="background:rgba(46,204,113,.08)" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9h8M8 13h6" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
-        <h3>AI Content Creation &amp; Scheduling</h3>
-        <p>Plan, create, and schedule strategic content so your business stays visible every week without worrying about what to post.</p>
-        <ul class="svc-list" aria-label="Includes">
-          <li>Monthly content calendar &amp; planning</li>
-          <li>AI-assisted creative production</li>
-          <li>Captions, carousels &amp; reels ideas</li>
-          <li>Content scheduling &amp; reports</li>
-        </ul>
-      </div>
-      <div class="svc-card reveal reveal-d1">
-        <div class="svc-icon" style="background:rgba(0,180,216,.08)" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00B4D8" stroke-width="1.6"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" stroke="#00B4D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="17" r="1" fill="#00B4D8"/></svg>
-        </div>
+      <div class="service-card reveal reveal-d3">
+        <div class="service-ico" style="background:rgba(34,197,94,.1);" aria-hidden="true">🤖</div>
         <h3>AI Chat Agents</h3>
-        <p>Build AI agents that answer frequently asked questions, qualify prospects, collect information, and help book appointments around the clock.</p>
-        <ul class="svc-list" aria-label="Includes">
-          <li>FAQ automation &amp; lead qualification</li>
-          <li>Appointment support &amp; routing</li>
-          <li>Data collection &amp; CRM updates</li>
-          <li>Human handoff alerts</li>
+        <p>Use AI agents to answer common questions, qualify prospects, collect information, and support appointment booking.</p>
+        <ul class="service-bullets">
+          <li>FAQ automation</li>
+          <li>Lead qualification</li>
+          <li>Appointment support</li>
+          <li>Human handoff alerts &amp; CRM updates</li>
         </ul>
+        <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
-      <div class="svc-card reveal reveal-d2">
-        <div class="svc-icon" style="background:rgba(27,58,107,.08)" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M2 20l6-6 4 4 6-8 6 6" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 7V3M22 3H18M22 3l-6 6" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Growth Operations</h3>
-        <p>Connect your content, CRM, automations, AI agents, and sales follow-up so everything works as one growth system — optimized each month.</p>
-        <ul class="svc-list" aria-label="Includes">
-          <li>Growth strategy &amp; CRM optimization</li>
-          <li>Automation planning &amp; content-to-lead workflows</li>
-          <li>Monthly optimization &amp; reporting</li>
-          <li>Strategic consulting</li>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-ico" style="background:rgba(30,107,242,.1);" aria-hidden="true">📱</div>
+        <h3>AI Content Creation &amp; Scheduling</h3>
+        <p>Plan, create, and schedule strategic content that keeps your business visible and connected to sales.</p>
+        <ul class="service-bullets">
+          <li>Monthly content calendar</li>
+          <li>AI-assisted creative production</li>
+          <li>Social captions, carousels &amp; reels ideas</li>
+          <li>Content scheduling</li>
         </ul>
+        <a href="#audit" class="service-link">Ask about this system →</a>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-ico" style="background:rgba(0,184,217,.1);" aria-hidden="true">⚙️</div>
+        <h3>Growth Operations</h3>
+        <p>Connect your content, CRM, AI agents, automations, and follow-up into one system that works together.</p>
+        <ul class="service-bullets">
+          <li>Growth strategy &amp; workflow planning</li>
+          <li>Monthly optimization</li>
+          <li>Reporting &amp; performance review</li>
+          <li>Sales process improvement</li>
+        </ul>
+        <a href="#audit" class="service-link">Ask about this system →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHOOSE YOUR BOTTLENECK -->
+<section id="bottleneck" aria-labelledby="bottleneck-h2">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Find Your System</div>
+      <h2 class="section-title" id="bottleneck-h2">Where is your growth system getting stuck?</h2>
+      <p class="section-sub">Identify your biggest challenge and we'll show you the right system to fix it.</p>
+    </div>
+    <div class="bottleneck-grid">
+      <div class="bottleneck-card reveal reveal-d1">
+        <div class="bottleneck-ico" aria-hidden="true">📣</div>
+        <h4>I need more leads</h4>
+        <p>Not enough inquiries coming in from your content or online presence.</p>
+        <span class="bottleneck-tag">AI Lead Capture</span>
+      </div>
+      <div class="bottleneck-card reveal reveal-d2">
+        <div class="bottleneck-ico" aria-hidden="true">🔁</div>
+        <h4>I need better follow-up</h4>
+        <p>Leads go cold because there's no consistent process after first contact.</p>
+        <span class="bottleneck-tag">AI CRM &amp; Automation</span>
+      </div>
+      <div class="bottleneck-card reveal reveal-d3">
+        <div class="bottleneck-ico" aria-hidden="true">📅</div>
+        <h4>I need consistent content</h4>
+        <p>Posting is irregular and not connected to your sales or lead process.</p>
+        <span class="bottleneck-tag">AI Content Engine</span>
+      </div>
+      <div class="bottleneck-card reveal reveal-d1">
+        <div class="bottleneck-ico" aria-hidden="true">⚡</div>
+        <h4>I need faster response</h4>
+        <p>Prospects contact you but wait too long before hearing back.</p>
+        <span class="bottleneck-tag">AI Chat Agents</span>
+      </div>
+      <div class="bottleneck-card reveal reveal-d2">
+        <div class="bottleneck-ico" aria-hidden="true">🔗</div>
+        <h4>I need everything connected</h4>
+        <p>Multiple tools that don't talk to each other, creating gaps in your sales process.</p>
+        <span class="bottleneck-tag">AI Growth System</span>
+      </div>
+    </div>
+    <div class="bottleneck-cta reveal reveal-d3">
+      <a href="#audit" class="btn btn-primary btn-lg">Find My Growth System</a>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" aria-labelledby="packages-h2">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Packages</div>
+      <h2 class="section-title" id="packages-h2">Choose the growth system that fits your business stage.</h2>
+      <p class="section-sub">Pricing depends on business needs. Book a free audit to get your recommendation.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="pkg-card reveal reveal-d1">
+        <div class="pkg-name">Starter Growth</div>
+        <div class="pkg-tagline">For small businesses that want more order, better follow-up, and consistent online visibility.</div>
+        <div class="pkg-price-note">Pricing based on business needs</div>
+        <div class="pkg-includes">What's included</div>
+        <ul class="pkg-list">
+          <li>Basic CRM setup</li>
+          <li>Simple follow-up process</li>
+          <li>Form or landing page</li>
+          <li>Basic AI chat agent</li>
+          <li>Initial follow-up automation</li>
+          <li>8 monthly social posts</li>
+          <li>Content scheduling</li>
+        </ul>
+        <p class="pkg-msg">Start capturing leads, organizing conversations, and staying visible online.</p>
+        <a href="#audit" class="pkg-cta">Start with Starter Growth</a>
+      </div>
+      <div class="pkg-card popular reveal reveal-d2">
+        <div class="pkg-badge">Most Popular</div>
+        <div class="pkg-name">Growth System</div>
+        <div class="pkg-tagline">For businesses that already receive leads and want a more organized sales process.</div>
+        <div class="pkg-price-note">Pricing based on business needs</div>
+        <div class="pkg-includes">What's included</div>
+        <ul class="pkg-list">
+          <li>Complete CRM &amp; custom pipeline</li>
+          <li>Lead qualification system</li>
+          <li>Follow-up automations</li>
+          <li>Commercial AI chat agent</li>
+          <li>Appointment calendar</li>
+          <li>12–16 monthly posts &amp; captions</li>
+          <li>Content scheduling &amp; monthly report</li>
+        </ul>
+        <p class="pkg-msg">Turn your leads, content, and follow-up into one organized sales system.</p>
+        <a href="#audit" class="pkg-cta">Build My Growth System</a>
+      </div>
+      <div class="pkg-card reveal reveal-d3">
+        <div class="pkg-name">Pro Growth Engine</div>
+        <div class="pkg-tagline">For businesses that want a complete AI-powered growth operation with content, leads, automation, and sales working together.</div>
+        <div class="pkg-price-note">Pricing based on business needs</div>
+        <div class="pkg-includes">What's included</div>
+        <ul class="pkg-list">
+          <li>Advanced CRM &amp; complete automations</li>
+          <li>Multi-channel AI agent</li>
+          <li>Landing page &amp; follow-up campaigns</li>
+          <li>Appointment calendar</li>
+          <li>20 monthly posts</li>
+          <li>Educational carousels &amp; reels scripts</li>
+          <li>Reports &amp; monthly optimization</li>
+        </ul>
+        <p class="pkg-msg">A complete growth engine for businesses that want content, leads, automation, and sales working together.</p>
+        <a href="#audit" class="pkg-cta">Launch My Growth Engine</a>
+      </div>
+    </div>
+    <p class="pkg-note reveal">Not sure which package fits? <a href="#audit" style="color:var(--blue);font-weight:600;">Book a free audit</a> and we'll tell you exactly what you need.</p>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" aria-labelledby="industries-h2">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Who We Serve</div>
+      <h2 class="section-title" id="industries-h2">Built for local businesses that depend on leads, appointments, and follow-up.</h2>
+    </div>
+    <div class="marquee-wrap reveal reveal-d1">
+      <div class="marquee-track" id="marquee-track">
+        <div class="ind-chip">🏠 Realtors</div>
+        <div class="ind-chip">💰 Mortgage Brokers</div>
+        <div class="ind-chip">🔨 Contractors</div>
+        <div class="ind-chip">🏗️ Renovation Companies</div>
+        <div class="ind-chip">🏥 Clinics</div>
+        <div class="ind-chip">🦷 Dental Clinics</div>
+        <div class="ind-chip">✨ Med Spas</div>
+        <div class="ind-chip">🏡 Home Services</div>
+        <div class="ind-chip">🛡️ Insurance Brokers</div>
+        <div class="ind-chip">🌐 Immigration Consultants</div>
+        <div class="ind-chip">💼 Professional Services</div>
+        <div class="ind-chip">🏪 Local Service Businesses</div>
+      </div>
+    </div>
+    <p class="industries-sub reveal reveal-d2">If your business depends on messages, consultations, quotes, bookings, or sales conversations, Pacific Growth Systems can help you organize and improve the way you manage leads.</p>
+  </div>
+</section>
+
+<!-- SYSTEM EXAMPLES -->
+<section id="examples" aria-labelledby="examples-h2">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Growth System Examples</div>
+      <h2 class="section-title" id="examples-h2">Example growth systems we can build for your business.</h2>
+      <p class="section-sub">These are sample systems — not case studies. Each one shows what a connected growth system looks like for a specific industry.</p>
+    </div>
+    <div class="examples-grid">
+      <div class="example-card reveal reveal-d1">
+        <div class="example-ico" aria-hidden="true">🏠</div>
+        <div class="example-industry">Realtor</div>
+        <h3>Realtor Lead System</h3>
+        <p>Capture buyer and seller inquiries, qualify leads automatically, organize them by readiness in the CRM, and trigger personalized follow-up until they're ready to book a showing or listing call.</p>
+        <div class="example-flow">
+          <span class="flow-tag">Lead Capture</span>
+          <span class="flow-tag">AI Qualification</span>
+          <span class="flow-tag">CRM Pipeline</span>
+          <span class="flow-tag">Follow-Up Automation</span>
+        </div>
+      </div>
+      <div class="example-card reveal reveal-d2">
+        <div class="example-ico" aria-hidden="true">🔨</div>
+        <div class="example-industry">Contractor</div>
+        <h3>Contractor Quote Request System</h3>
+        <p>Capture quote requests from your website or social media, collect project details automatically, notify your team instantly, and follow up with prospects who haven't responded yet.</p>
+        <div class="example-flow">
+          <span class="flow-tag">Smart Form</span>
+          <span class="flow-tag">Team Notification</span>
+          <span class="flow-tag">CRM Entry</span>
+          <span class="flow-tag">Auto Follow-Up</span>
+        </div>
+      </div>
+      <div class="example-card reveal reveal-d1">
+        <div class="example-ico" aria-hidden="true">🏥</div>
+        <div class="example-industry">Clinic</div>
+        <h3>Clinic Appointment System</h3>
+        <p>Answer common patient questions with an AI agent, capture new patient inquiries from website or Instagram, support appointment booking, and organize follow-up for patients who didn't book.</p>
+        <div class="example-flow">
+          <span class="flow-tag">AI Chat Agent</span>
+          <span class="flow-tag">Inquiry Capture</span>
+          <span class="flow-tag">Appointment Booking</span>
+          <span class="flow-tag">Follow-Up</span>
+        </div>
+      </div>
+      <div class="example-card reveal reveal-d2">
+        <div class="example-ico" aria-hidden="true">✨</div>
+        <div class="example-industry">Med Spa</div>
+        <h3>Med Spa Consultation System</h3>
+        <p>Turn Instagram or website inquiries into qualified consultation requests. AI agent collects preferences and budget, team gets notified, and automated follow-up keeps warm leads moving toward booking.</p>
+        <div class="example-flow">
+          <span class="flow-tag">Instagram DM</span>
+          <span class="flow-tag">AI Qualification</span>
+          <span class="flow-tag">Consultation Request</span>
+          <span class="flow-tag">CRM + Follow-Up</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section" id="how-it-works" aria-labelledby="hiw-h2">
+<section id="how" aria-labelledby="how-h2">
   <div class="container">
-    <div class="text-center reveal" style="max-width:600px;margin:0 auto">
-      <div class="label label-blue">How It Works</div>
-      <h2 id="hiw-h2">Five steps to a connected growth system</h2>
-      <p style="margin-top:14px" class="reveal reveal-d1">We audit, design, build, launch, and optimize so you can focus on running your business.</p>
+    <div class="text-center reveal">
+      <div class="section-label">Process</div>
+      <h2 class="section-title" id="how-h2">How we build your growth system.</h2>
+      <p class="section-sub">A clear 5-step process from audit to launch to monthly optimization.</p>
     </div>
-    <div class="steps-container">
-      <div class="steps-line" aria-hidden="true"></div>
-      <div class="steps-grid">
-        <div class="step-item reveal reveal-d1">
-          <div class="step-num active" aria-label="Step 1">1</div>
-          <div>
-            <div class="step-title">Growth Audit</div>
-            <div class="step-desc">We review how your business currently captures leads, creates content, follows up, and manages sales.</div>
-          </div>
+    <div class="steps">
+      <div class="step reveal reveal-d1">
+        <div class="step-line">
+          <div class="step-num">1</div>
+          <div class="step-connector"></div>
         </div>
-        <div class="step-item reveal reveal-d2">
-          <div class="step-num active" aria-label="Step 2">2</div>
-          <div>
-            <div class="step-title">System Design</div>
-            <div class="step-desc">We design a growth system based on your goals, channels, team, and sales process.</div>
-          </div>
+        <div class="step-content">
+          <h3>Growth Audit</h3>
+          <p>We review how your business currently captures leads, creates content, follows up, and manages sales opportunities. We identify where the biggest gaps are.</p>
         </div>
-        <div class="step-item reveal reveal-d3">
-          <div class="step-num active" aria-label="Step 3">3</div>
-          <div>
-            <div class="step-title">Build &amp; Setup</div>
-            <div class="step-desc">We build your CRM, automations, AI agent, content system, forms, and follow-up workflows.</div>
-          </div>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="step-line">
+          <div class="step-num">2</div>
+          <div class="step-connector"></div>
         </div>
-        <div class="step-item reveal reveal-d4">
-          <div class="step-num done" aria-label="Step 4">4</div>
-          <div>
-            <div class="step-title">Launch</div>
-            <div class="step-desc">We connect the system, test the flows, train your team, and launch your growth operation.</div>
-          </div>
+        <div class="step-content">
+          <h3>System Design</h3>
+          <p>We design a connected growth system based on your business goals, channels, team structure, and sales process.</p>
         </div>
-        <div class="step-item reveal reveal-d4">
-          <div class="step-num done" aria-label="Step 5">5</div>
-          <div>
-            <div class="step-title">Optimize</div>
-            <div class="step-desc">We review performance, improve follow-up, adjust content, and optimize your system monthly.</div>
-          </div>
+      </div>
+      <div class="step reveal reveal-d3">
+        <div class="step-line">
+          <div class="step-num">3</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Build &amp; Setup</h3>
+          <p>We build your CRM, automations, AI agent, content system, forms, landing pages, and follow-up workflows. Everything configured and connected.</p>
+        </div>
+      </div>
+      <div class="step reveal reveal-d1">
+        <div class="step-line">
+          <div class="step-num">4</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Launch</h3>
+          <p>We test the flows, connect the tools, train your team, and launch your system. No leads lost during the transition.</p>
+        </div>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="step-line">
+          <div class="step-num">5</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Optimize</h3>
+          <p>We review performance every month, improve follow-up sequences, adjust content strategy, and optimize the system based on real results.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGES -->
-<section class="section section-alt" id="packages" aria-labelledby="pkg-h2">
+<!-- WHY PACIFIC GROWTH SYSTEMS -->
+<section id="why" aria-labelledby="why-h2">
   <div class="container">
-    <div class="text-center reveal" style="max-width:600px;margin:0 auto">
-      <div class="label label-blue">Packages</div>
-      <h2 id="pkg-h2">Choose the growth system that fits your business stage.</h2>
+    <div class="reveal">
+      <div class="section-label">Why Us</div>
+      <h2 class="section-title" id="why-h2">We are not just another marketing agency.</h2>
     </div>
-    <div class="pkg-grid">
-      <!-- Starter -->
-      <div class="pkg reveal reveal-d1">
-        <div class="pkg-tier">Starter</div>
-        <div class="pkg-name">Starter Growth</div>
-        <p class="pkg-desc">For small businesses that want to start with more order, better follow-up, and consistent online visibility.</p>
-        <ul class="pkg-list" aria-label="Includes">
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic CRM &amp; follow-up process</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Form or landing page</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic AI agent</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Initial follow-up automation</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>8 monthly posts &amp; scheduling</li>
-        </ul>
-        <div class="pkg-promise">Start capturing leads, organizing conversations, and staying visible online.</div>
-        <a href="#cta-section" class="btn btn-outline">Start with Starter Growth</a>
-      </div>
-      <!-- Featured -->
-      <div class="pkg featured reveal reveal-d2">
-        <div class="pkg-ribbon">Most Popular</div>
-        <div class="pkg-tier">Growth System</div>
-        <div class="pkg-name">Growth System</div>
-        <p class="pkg-desc">For businesses that already receive leads and want a more organized sales process that converts.</p>
-        <ul class="pkg-list" aria-label="Includes">
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Complete CRM &amp; custom sales pipeline</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Lead qualification &amp; follow-up automations</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Commercial AI agent</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Appointment calendar integration</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>12–16 monthly posts &amp; captions</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#00B4D8" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#00B4D8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Content scheduling &amp; monthly report</li>
-        </ul>
-        <div class="pkg-promise">Turn your leads, content, and follow-up into one organized sales system.</div>
-        <a href="#cta-section" class="btn btn-white">Build My Growth System</a>
-      </div>
-      <!-- Pro -->
-      <div class="pkg reveal reveal-d3">
-        <div class="pkg-tier">Pro</div>
-        <div class="pkg-name">Pro Growth Engine</div>
-        <p class="pkg-desc">For businesses that want a complete AI-powered growth operation with content, leads, automation, and sales working together.</p>
-        <ul class="pkg-list" aria-label="Includes">
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced CRM &amp; complete automations</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-channel AI agent</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Landing page &amp; follow-up campaigns</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>20 monthly posts + carousels + reels</li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#2ECC71" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#2ECC71" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Reports &amp; monthly optimization</li>
-        </ul>
-        <div class="pkg-promise">A complete growth engine for businesses that want content, leads, automation, and sales working together.</div>
-        <a href="#cta-section" class="btn btn-green">Launch My Growth Engine</a>
-      </div>
+    <p class="why-copy reveal reveal-d1">Many agencies create content.<br>Many companies install tools.<br><strong>Pacific Growth Systems connects everything into one growth system.</strong><br><br>We create content that starts conversations, conversations that become leads, and leads that move into a clear follow-up and sales process. Every piece of the system is designed to work together.</p>
+    <div class="reveal reveal-d2">
+      <table class="compare-table" aria-label="Pacific Growth Systems vs Traditional Agency comparison">
+        <thead>
+          <tr>
+            <th>Traditional Agency</th>
+            <th>Pacific Growth Systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Creates posts</td>
+            <td><span class="compare-check">✓</span> Connects content to CRM</td>
+          </tr>
+          <tr>
+            <td>Runs ads</td>
+            <td><span class="compare-check">✓</span> Builds lead capture systems</td>
+          </tr>
+          <tr>
+            <td>Installs tools</td>
+            <td><span class="compare-check">✓</span> Designs connected workflows</td>
+          </tr>
+          <tr>
+            <td>Sends monthly reports</td>
+            <td><span class="compare-check">✓</span> Optimizes the full growth system</td>
+          </tr>
+          <tr>
+            <td>Focuses on visibility</td>
+            <td><span class="compare-check">✓</span> Connects visibility to sales action</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="section" id="industries" aria-labelledby="ind-h2">
+<!-- FREE GROWTH AUDIT -->
+<section id="audit" aria-labelledby="audit-h2">
   <div class="container">
-    <div class="text-center reveal" style="max-width:640px;margin:0 auto">
-      <div class="label label-blue">Industries We Serve</div>
-      <h2 id="ind-h2">Built for local businesses that depend on leads, appointments, and follow-up.</h2>
-      <p style="margin-top:16px" class="reveal reveal-d1">If your business depends on messages, appointments, consultations, quotes, or sales conversations, Pacific Growth Systems can help you organize and improve the way you manage leads.</p>
-    </div>
-    <div class="reveal reveal-d2" role="list" aria-label="Industries served">
-      <div class="marquee">
-        <div class="marquee-track" id="marquee-1">
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Real Estate Agents</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Mortgage Brokers</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Clinics</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Dental Clinics</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Med Spas</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Contractors</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Renovation Companies</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Roofing Companies</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>HVAC Companies</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Plumbing Companies</div>
-        </div>
-      </div>
-      <div class="marquee">
-        <div class="marquee-track reverse" id="marquee-2">
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Insurance Brokers</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Immigration Consultants</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Education Consultants</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Professional Services</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Home Services</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Restaurants &amp; Local Brands</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Fitness Studios</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Beauty Clinics</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Auto Dealers</div>
-          <div class="ind-chip" role="listitem"><span class="ind-dot" aria-hidden="true"></span>Coaches &amp; Consultants</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section section-alt" id="about" aria-labelledby="about-h2">
-  <div class="container">
-    <div class="about-grid">
+    <div class="audit-grid">
       <div>
-        <div class="label label-blue">About Us</div>
-        <h2 id="about-h2" class="reveal">We build connected growth systems for modern local businesses.</h2>
-        <p class="reveal reveal-d1" style="margin-top:16px">Pacific Growth Systems was created to help local businesses in Burnaby and Metro Vancouver grow with more structure, speed, and clarity.</p>
-        <p class="reveal reveal-d2" style="margin-top:12px">We combine AI, CRM, automation, content creation, and commercial strategy to help businesses stop losing leads and start managing growth with a connected system.</p>
-        <div class="pillar-list reveal reveal-d2">
-          <div class="pillar">
-            <div class="pillar-ico" style="background:rgba(27,58,107,.08)" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2.09 5.26L19 8.27l-5 4.87 1.18 6.88L11 17.77l-5.18 2.25L7 13.14 2 8.27l5.91-.91L11 2z" stroke="#1B3A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="reveal">
+          <div class="section-label">Free Growth Audit</div>
+          <h2 class="section-title" id="audit-h2">Book a Free 20-Minute Growth Audit</h2>
+          <p class="section-sub">We'll review how your business currently captures leads, creates content, responds to inquiries, manages CRM, and follows up with prospects. You'll see exactly where opportunities are getting lost.</p>
+        </div>
+        <div class="audit-includes">
+          <div class="audit-item reveal reveal-d1">
+            <div class="audit-item-ico" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#22C55E" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <div>
-              <div class="pillar-title">Connected Systems, Not Scattered Tools</div>
-              <div class="pillar-desc">Every component is designed to work together — content, CRM, AI, and automation.</div>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-ico" style="background:rgba(0,180,216,.08)" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="#00B4D8" stroke-width="1.5"/><path d="M11 7v4l3 3" stroke="#00B4D8" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div>
-              <div class="pillar-title">Speed &amp; Consistent Follow-Up</div>
-              <div class="pillar-desc">Every system is built to respond faster and follow up more consistently than manual processes.</div>
+            <div class="audit-item-text">
+              <h4>Lead Capture Review</h4>
+              <p>Where are leads coming from and how many are being lost?</p>
             </div>
           </div>
-          <div class="pillar">
-            <div class="pillar-ico" style="background:rgba(46,204,113,.08)" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M2 18l4-4 4 4 5-7 7 6" stroke="#2ECC71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="audit-item reveal reveal-d2">
+            <div class="audit-item-ico" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#22C55E" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <div>
-              <div class="pillar-title">Measurable Commercial Growth</div>
-              <div class="pillar-desc">More leads captured, more appointments booked, more revenue — results you can see.</div>
+            <div class="audit-item-text">
+              <h4>Follow-Up &amp; CRM Review</h4>
+              <p>How are leads being tracked and followed up after first contact?</p>
+            </div>
+          </div>
+          <div class="audit-item reveal reveal-d3">
+            <div class="audit-item-ico" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#22C55E" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="audit-item-text">
+              <h4>Content-to-Sales Review</h4>
+              <p>Is your content creating leads or just likes?</p>
+            </div>
+          </div>
+          <div class="audit-item reveal reveal-d1">
+            <div class="audit-item-ico" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#22C55E" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="audit-item-text">
+              <h4>Automation Opportunities</h4>
+              <p>Where can your team save time with the right automations?</p>
+            </div>
+          </div>
+          <div class="audit-item reveal reveal-d2">
+            <div class="audit-item-ico" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#22C55E" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="audit-item-text">
+              <h4>Recommended Growth System</h4>
+              <p>We'll tell you exactly which system your business needs next.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="about-visual reveal reveal-d2">
-        <div class="metric-row">
-          <div class="metric-card">
-            <div class="metric-num"><span class="metric-accent">AI</span></div>
-            <div class="metric-label">Powered CRM &amp; Automation</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-num"><span class="metric-green">24/7</span></div>
-            <div class="metric-label">Instant AI Agent Response</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-num" data-count="5" data-suffix="+">5+</div>
-            <div class="metric-label">Connected Growth Systems</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-num" style="font-size:22px">BC</div>
-            <div class="metric-label">Based in Burnaby, Canada</div>
-          </div>
-        </div>
-        <div class="about-cta-box">
-          <div class="about-cta-title">Ready to build your growth system?</div>
-          <div class="about-cta-desc">Book a free audit and we will review your current lead capture, follow-up, content, and sales process.</div>
-          <a href="#cta-section" class="btn btn-green" style="font-size:13px;padding:11px 22px;min-height:42px">Book a Free Growth Audit</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq" aria-labelledby="faq-h2">
-  <div class="container">
-    <div class="text-center reveal" style="max-width:600px;margin:0 auto">
-      <div class="label label-blue">FAQ</div>
-      <h2 id="faq-h2">Common questions</h2>
-    </div>
-    <div class="faq-wrap" role="list">
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          What does Pacific Growth Systems do?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">We build AI-powered growth systems that connect content creation, lead capture, CRM, automation, AI agents, and follow-up workflows. We help local businesses turn content into conversations, conversations into leads, and leads into booked appointments.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          Is this only for large companies?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">No. Our systems are designed for local businesses, service businesses, sales teams, and growing companies that want more order and better follow-up. We work with businesses of all sizes in Burnaby and Metro Vancouver.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          Do I need to already have a CRM?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">No. We can set up a new CRM for your business or improve the one you already use. We design it around your specific sales process, team, and industry.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          Can you create content for my business?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">Yes. Our AI Content Engine helps plan, create, and schedule strategic content for your business every month — posts, carousels, captions, and reels ideas adapted to your industry and goals.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          Can the AI agent replace my sales team?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">No. The AI agent supports your team by answering initial questions, qualifying prospects, collecting information, and helping schedule appointments. Your team still handles the most important conversations — the AI helps them respond faster and work with better information.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          What makes Pacific Growth Systems different from a marketing agency?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">Most agencies create content or run ads. We connect your content to your sales process, CRM, automations, and follow-up system. We do not just post — we build a connected system where every piece of content is designed to generate conversations and commercial results.</div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          What is the first step?
-          <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="faq-body">The first step is a free growth audit where we review your current lead capture, follow-up, content, and sales process. We identify gaps and opportunities, then recommend the right system for your business.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section id="cta-section" aria-labelledby="cta-h2">
-  <div class="container" style="position:relative;z-index:1">
-    <div class="label label-white" style="display:inline-flex">Free Growth Audit</div>
-    <h2 id="cta-h2" class="reveal">Ready to stop losing leads and start building a connected growth system?</h2>
-    <p class="reveal reveal-d1">Book a free growth audit and we will review how your business is currently capturing leads, following up, and staying visible online.</p>
-    <div class="cta-btns reveal reveal-d2">
-      <a href="mailto:hello@pacificgrowthsystems.ca" class="btn btn-green btn-lg">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l7 4.5L16 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        Book a Free Growth Audit
-      </a>
-      <a href="mailto:hello@pacificgrowthsystems.ca" class="btn btn-ghost-white btn-lg">Talk to Our Team</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" aria-labelledby="contact-h2">
-  <div class="container">
-    <div class="contact-grid">
-      <div>
-        <div class="label label-white">Contact</div>
-        <h2 id="contact-h2" style="color:var(--white)" class="reveal">Let's talk about your growth system</h2>
-        <p class="reveal reveal-d1" style="color:rgba(255,255,255,.6);margin-top:14px">We are based in Burnaby, BC and work with local businesses across Metro Vancouver and beyond. Reach out and we will get back to you within one business day.</p>
-        <div style="margin-top:36px">
-          <div class="contact-info-item">
-            <div class="contact-ico" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="rgba(255,255,255,.6)" stroke-width="1.4"/><path d="M2 7l7 4.5L16 7" stroke="rgba(255,255,255,.6)" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-label">Email</div>
-              <div class="contact-detail-val"><a href="mailto:hello@pacificgrowthsystems.ca">hello@pacificgrowthsystems.ca</a></div>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-ico" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5C6.51 1.5 4.5 3.51 4.5 6c0 3.375 4.5 9 4.5 9s4.5-5.625 4.5-9c0-2.49-2.01-4.5-4.5-4.5z" stroke="rgba(255,255,255,.6)" stroke-width="1.4"/><circle cx="9" cy="6" r="1.5" fill="rgba(255,255,255,.6)"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-label">Location</div>
-              <div class="contact-detail-val">Burnaby, British Columbia, Canada</div>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-ico" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM3.6 12.9l.4-1.4a6 6 0 111.1 1.1l-1.5.3z" stroke="rgba(255,255,255,.6)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 7.3c.1-.3.3-.6.6-.7.2-.1.5-.1.7 0l.5 1.1c.1.3.1.6-.1.8l-.3.4c.3.6.8 1.1 1.4 1.4l.4-.3c.2-.2.5-.2.8-.1l1.1.5c.2.1.3.4.2.7-.1.3-.3.6-.6.7a3 3 0 01-4.7-3.5z" fill="rgba(255,255,255,.6)"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-label">WhatsApp</div>
-              <div class="contact-detail-val"><a href="https://wa.me/5215563864984" target="_blank" rel="noopener">+52 1 56 6386 4984</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal reveal-d2" style="border-radius:16px;overflow:hidden;min-height:691px">
+      <div class="audit-form-wrap reveal reveal-d2">
         <iframe
           src="https://api.leadconnectorhq.com/widget/form/IBrY5NWPofnlPTNQlPGW"
           style="width:100%;height:691px;border:none;border-radius:16px;display:block"
@@ -1198,7 +1033,7 @@ footer{background:#060f1e;color:rgba(255,255,255,.5);padding:64px 0 32px}
           data-height="691"
           data-layout-iframe-id="inline-IBrY5NWPofnlPTNQlPGW"
           data-form-id="IBrY5NWPofnlPTNQlPGW"
-          title="Landing form"
+          title="Book a Free Growth Audit"
         ></iframe>
         <script src="https://link.msgsndr.com/js/form_embed.js"></script>
       </div>
@@ -1206,159 +1041,280 @@ footer{background:#060f1e;color:rgba(255,255,255,.5);padding:64px 0 32px}
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer role="contentinfo">
+<!-- CONTACT INFO -->
+<div id="contact-info">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <div class="footer-brand-mark" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 14L6 8l3.5 4 4.5-6 4 4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="9" r="2" fill="#2ECC71"/></svg>
+    <div class="contact-info-grid">
+      <div class="contact-info-block">
+        <h3>Get in Touch</h3>
+        <div class="contact-info-item">
+          <div class="contact-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2C5.7 2 3 4.7 3 8c0 4 6 9 6 9s6-5 6-9c0-3.3-2.7-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" fill="white" opacity=".7"/></svg>
           </div>
-          Pacific Growth Systems
+          <div>
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-val"><a href="https://wa.me/5215563864984" target="_blank" rel="noopener noreferrer">+52 1 56 6386 4984</a></div>
+          </div>
         </div>
-        <p class="footer-desc">AI-powered growth systems that connect content, leads, CRM, automation, and sales for local businesses in Burnaby and Metro Vancouver.</p>
-        <p class="footer-tagline"><strong>Content + AI + CRM + Automation</strong><br>= Connected Growth</p>
+        <div class="contact-info-item">
+          <div class="contact-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="white" stroke-width="1.5" opacity=".7"/><path d="M2 6l7 5 7-5" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity=".7"/></svg>
+          </div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-val"><a href="mailto:hello@pacificgrowthsystems.ca">hello@pacificgrowthsystems.ca</a></div>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="footer-col-title">Services</div>
-        <ul class="footer-links">
-          <li><a href="#services">AI CRM &amp; Sales Automation</a></li>
+      <div class="contact-info-block">
+        <h3>Service Area</h3>
+        <div class="contact-info-item">
+          <div class="contact-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2C5.7 2 3 4.7 3 8c0 4 6 9 6 9s6-5 6-9c0-3.3-2.7-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" fill="white" opacity=".7"/></svg>
+          </div>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-val" style="color:rgba(255,255,255,.85);">Burnaby, Metro Vancouver<br>British Columbia, Canada</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-block">
+        <h3>Ready to Start?</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.55);margin-bottom:20px;line-height:1.65;">Book your free 20-minute growth audit and find out exactly what system your business needs to capture more leads and convert more customers.</p>
+        <a href="#audit" class="btn btn-primary">Book a Free Audit</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-h2">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title" id="faq-h2">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal reveal-d1">
+        <button class="faq-q" aria-expanded="false">
+          What does Pacific Growth Systems do?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">We build AI-powered growth systems that connect content creation, lead capture, CRM, automation, AI agents, and follow-up workflows. Everything works together so your business captures more leads and converts more customers.</div>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <button class="faq-q" aria-expanded="false">
+          Is this only for large companies?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">No. Our systems are designed for local businesses, service businesses, sales teams, and growing companies that want more order and better follow-up. We work with businesses at all stages.</div>
+      </div>
+      <div class="faq-item reveal reveal-d3">
+        <button class="faq-q" aria-expanded="false">
+          Do I need to already have a CRM?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">No. We can set up a new CRM for your business or improve the one you already use. We'll design the pipeline and automation that fits your sales process.</div>
+      </div>
+      <div class="faq-item reveal reveal-d1">
+        <button class="faq-q" aria-expanded="false">
+          Can you create content for my business?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. Our AI Content Engine helps plan, create, and schedule strategic content for your business every month — captions, carousels, reels ideas, and educational posts connected to your growth system.</div>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <button class="faq-q" aria-expanded="false">
+          Can the AI agent replace my sales team?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">No. The AI agent supports your team by answering initial questions, qualifying prospects, collecting information, and helping schedule appointments. Your team handles the real conversations and closes the deals.</div>
+      </div>
+      <div class="faq-item reveal reveal-d3">
+        <button class="faq-q" aria-expanded="false">
+          What makes Pacific Growth Systems different from a marketing agency?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">Most agencies create content or run ads. We connect your content to your sales process, CRM, automations, and follow-up system. Everything is designed to work together and move leads toward a sale.</div>
+      </div>
+      <div class="faq-item reveal reveal-d1">
+        <button class="faq-q" aria-expanded="false">
+          What is the first step?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M5 7l4 4 4-4" stroke="#0B1D3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a">The first step is a free 20-minute growth audit where we review your current lead capture, follow-up, content, and sales process. At the end, you'll know exactly what system your business needs.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta-final" aria-labelledby="cta-h2">
+  <div class="container">
+    <h2 id="cta-h2">Growth needs a system,<br>not more disconnected tools.</h2>
+    <p>Book your free 20-minute growth audit and see exactly where your business is losing leads — and what to do about it.</p>
+    <div class="btns">
+      <a href="#audit" class="btn btn-primary btn-lg">Book My Free Growth Audit</a>
+      <a href="#system" class="btn btn-outline">See How It Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" aria-label="Pacific Growth Systems home">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="9" fill="#1E6BF2"/>
+            <circle cx="15" cy="15" r="2" fill="#00B8D9"/>
+            <circle cx="21" cy="15" r="2" fill="#00B8D9"/>
+            <circle cx="18" cy="21" r="2" fill="#22C55E"/>
+            <line x1="15" y1="15" x2="21" y2="15" stroke="white" stroke-width="1.2" opacity=".4"/>
+            <line x1="15" y1="15" x2="18" y2="21" stroke="white" stroke-width="1.2" opacity=".4"/>
+            <line x1="21" y1="15" x2="18" y2="21" stroke="white" stroke-width="1.2" opacity=".4"/>
+            <path d="M11 27l2.5-4 4.5 2 4.5-2 2.5 4H11z" fill="#22C55E" opacity=".7"/>
+          </svg>
+          <div class="nav-logo-text">Pacific <span>Growth</span><br>Systems</div>
+        </a>
+        <p>Pacific Growth Systems helps local businesses in Burnaby and Metro Vancouver build connected AI-powered growth systems for content, leads, follow-up, and sales.</p>
+        <div class="footer-area">Burnaby · Metro Vancouver · British Columbia, Canada</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="11.5" cy="4.5" r=".75" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 7v4M5 5.5v.01M8 11V9a1 1 0 012 0v2M8 7v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </a>
+          <a href="https://wa.me/5215563864984" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 5.5c.5 1 1.5 2.5 2 3 .5.5 2 1.5 3 2l.5-.5c.2-.2.2-.5 0-.6l-.8-.8c-.2-.2-.5-.2-.6 0l-.3.3c-.3-.2-.7-.5-1-1s-.8-.7-1-.9l.3-.3c.2-.2.2-.5 0-.6l-.8-.8c-.2-.2-.5-.2-.6 0l-.7.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">AI CRM &amp; Automation</a></li>
           <li><a href="#services">AI Lead Capture</a></li>
-          <li><a href="#services">AI Content Creation</a></li>
           <li><a href="#services">AI Chat Agents</a></li>
+          <li><a href="#services">AI Content Creation</a></li>
           <li><a href="#services">Growth Operations</a></li>
         </ul>
       </div>
-      <div>
-        <div class="footer-col-title">Company</div>
-        <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#faq">FAQ</a></li>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#industries">Realtors</a></li>
+          <li><a href="#industries">Contractors</a></li>
+          <li><a href="#industries">Clinics</a></li>
+          <li><a href="#industries">Med Spas</a></li>
+          <li><a href="#industries">Home Services</a></li>
         </ul>
       </div>
-      <div>
-        <div class="footer-col-title">Get Started</div>
-        <ul class="footer-links">
-          <li><a href="#cta-section">Free Growth Audit</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="mailto:hello@pacificgrowthsystems.ca">Email Us</a></li>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#why">Why PGS</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#audit">Free Growth Audit</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2024 Pacific Growth Systems. All rights reserved.</span>
-      <div class="footer-loc">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1A4 4 0 002.5 5c0 3 4 7 4 7s4-4 4-7a4 4 0 00-4-4z" stroke="rgba(255,255,255,.35)" stroke-width="1.1"/><circle cx="6.5" cy="5" r="1.3" fill="rgba(255,255,255,.35)"/></svg>
-        Burnaby, British Columbia, Canada
+      <div class="footer-copy">&copy; <span id="year"></span> Pacific Growth Systems. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
   </div>
 </footer>
 
-<button id="to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 15.5v-11M5 9.5l5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<!-- BACK TO TOP -->
+<button id="back-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 13V5M5 9l4-4 4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
 <script>
-// Navbar scroll
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
+  // Scroll progress + nav
+  const bar = document.getElementById('scroll-bar');
+  const nav = document.getElementById('nav');
+  const backTop = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    const p = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    bar.style.width = (p * 100) + '%';
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+    backTop.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// Mobile menu
-const ham=document.getElementById('ham'),mob=document.getElementById('mobile-menu');
-ham.addEventListener('click',()=>{const o=mob.classList.toggle('open');ham.setAttribute('aria-expanded',o)});
-function closeMob(){mob.classList.remove('open');ham.setAttribute('aria-expanded','false')}
-
-// Close mobile on outside click
-document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!mob.contains(e.target))closeMob()});
-
-// FAQ
-function toggleFaq(btn){
-  const item=btn.closest('.faq-item'),wasOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el=>{el.classList.remove('open');el.querySelector('.faq-btn').setAttribute('aria-expanded','false')});
-  if(!wasOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
-}
-
-// Scroll reveal
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
-},{threshold:.1,rootMargin:'0px 0px -36px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Active nav
-const secs=[...document.querySelectorAll('section[id]')];
-const links=[...document.querySelectorAll('.nav-links a')];
-window.addEventListener('scroll',()=>{
-  const y=scrollY+120;
-  let cur='';
-  secs.forEach(s=>{if(y>=s.offsetTop)cur=s.id});
-  links.forEach(a=>{
-    const active=a.getAttribute('href')==='#'+cur;
-    a.style.color=active?(nav.classList.contains('scrolled')?'var(--navy)':'var(--white)'):'';
-    a.style.fontWeight=active?'700':'';
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(open));
+    mobileMenu.classList.toggle('open', open);
   });
-},{passive:true});
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.remove('open');
+  }));
 
-// Scroll progress + back-to-top
-const prog=document.getElementById('scroll-progress'),toTop=document.getElementById('to-top');
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement,max=h.scrollHeight-h.clientHeight;
-  prog.style.width=(max>0?(scrollY/max)*100:0)+'%';
-  toTop.classList.toggle('show',scrollY>600);
-},{passive:true});
+  // Scroll reveal
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-// Hero flow — auto-cycling active highlight (interactive)
-const flowRows=[...document.querySelectorAll('.hero-card .flow-row')];
-let flowIdx=0,flowTimer;
-function cycleFlow(){
-  flowRows.forEach(r=>r.classList.remove('active'));
-  flowRows[flowIdx].classList.add('active');
-  flowIdx=(flowIdx+1)%flowRows.length;
-}
-const reduceMotion=matchMedia('(prefers-reduced-motion:reduce)').matches;
-if(flowRows.length&&!reduceMotion){cycleFlow();flowTimer=setInterval(cycleFlow,1600);}
-// Pause cycling on manual hover, let user explore
-flowRows.forEach((r,i)=>{
-  r.addEventListener('mouseenter',()=>{clearInterval(flowTimer);flowRows.forEach(x=>x.classList.remove('active'));r.classList.add('active');flowIdx=i;});
-  r.addEventListener('mouseleave',()=>{if(!reduceMotion)flowTimer=setInterval(cycleFlow,1600);});
-});
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
 
-// Marquee — duplicate chips for seamless infinite loop
-['marquee-1','marquee-2'].forEach(id=>{
-  const t=document.getElementById(id);
-  if(t&&!reduceMotion){t.innerHTML+=t.innerHTML;t.querySelectorAll('.ind-chip').forEach((c,i)=>{if(i>=t.children.length/2)c.setAttribute('aria-hidden','true')});}
-});
+  // Marquee duplicate
+  const track = document.getElementById('marquee-track');
+  if (track) track.innerHTML += track.innerHTML;
 
-// Animated counters
-function animateCount(el){
-  const target=parseFloat(el.dataset.count),suffix=el.dataset.suffix||'',dur=1400,start=performance.now();
-  function tick(now){
-    const p=Math.min((now-start)/dur,1),eased=1-Math.pow(1-p,3);
-    el.textContent=Math.round(target*eased)+suffix;
-    if(p<1)requestAnimationFrame(tick);
+  // Flow node cycling
+  const nodes = document.querySelectorAll('.flow-node');
+  let activeNode = 0;
+  if (nodes.length) {
+    nodes[0].classList.add('active');
+    let timer = setInterval(cycle, 1600);
+    function cycle() {
+      nodes[activeNode].classList.remove('active');
+      activeNode = (activeNode + 1) % nodes.length;
+      nodes[activeNode].classList.add('active');
+    }
+    const sys = document.getElementById('system');
+    sys && sys.addEventListener('mouseenter', () => clearInterval(timer));
+    sys && sys.addEventListener('mouseleave', () => { timer = setInterval(cycle, 1600); });
   }
-  requestAnimationFrame(tick);
-}
-const countObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){animateCount(e.target);countObs.unobserve(e.target);}})},{threshold:.5});
-document.querySelectorAll('[data-count]').forEach(el=>{if(reduceMotion){el.textContent=el.dataset.count+(el.dataset.suffix||'');}else countObs.observe(el);});
 
-// Form
-function handleForm(e){
-  e.preventDefault();
-  const form=e.target,btn=document.getElementById('form-btn');
-  if(!form.checkValidity()){form.reportValidity();return}
-  btn.textContent='Sending...';btn.disabled=true;
-  setTimeout(()=>{
-    btn.textContent='Request Sent!';
-    btn.style.background='#27ae60';
-    form.reset();
-    setTimeout(()=>{btn.textContent='Send My Request';btn.disabled=false;btn.style.background=''},3500);
-  },900);
-}
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
 </script>
 </body>
 </html>
