@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Growth Systems for Burnaby & Metro Vancouver | Pacific Growth Systems</title>
-  <link rel="icon" type="image/png" href="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <meta name="description" content="Pacific Growth Systems helps local businesses in Burnaby and Metro Vancouver capture leads, automate follow-up, organize CRM, and stay visible online with AI-powered growth systems.">
   <meta property="og:title" content="AI Growth Systems for Burnaby & Metro Vancouver | Pacific Growth Systems">
   <meta property="og:description" content="Turn content into conversations, conversations into leads, and leads into booked appointments with AI-powered CRM, automation, and content systems.">
+  <meta property="og:image" content="assets/images/logo-square.png">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -233,7 +236,10 @@
     #examples { background: var(--white); }
     .examples-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 52px; }
     .example-card { border-radius: var(--radius); padding: 36px; border: 1px solid rgba(30,107,242,.12); transition: all .25s; position: relative; overflow: hidden; }
-    .example-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--blue),var(--aqua)); }
+    .example-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--blue),var(--aqua)); z-index: 1; }
+    .example-shot { margin: -36px -36px 20px -36px; overflow: hidden; cursor: zoom-in; }
+    .example-shot img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .35s; }
+    .example-card:hover .example-shot img { transform: scale(1.04); }
     .example-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
     .example-ico { font-size: 2.2rem; margin-bottom: 16px; }
     .example-industry { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--aqua); margin-bottom: 8px; }
@@ -268,11 +274,17 @@
     .compare-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
     .compare-table td:first-child { color: rgba(255,255,255,.5); }
     .compare-table td:last-child { color: rgba(255,255,255,.85); }
+    .why-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+    .why-photo { border-radius: var(--radius); overflow: hidden; }
+    .why-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } .why-photo { order: -1; } }
     .compare-check { color: var(--green); margin-right: 6px; font-weight: 700; }
 
     /* FREE AUDIT */
     #audit { background: var(--white); }
     .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-top: 16px; }
+    .audit-photo { margin: 24px 0; border-radius: var(--radius); overflow: hidden; }
+    .audit-photo img { width: 100%; height: auto; display: block; }
     .audit-includes { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
     .audit-item { display: flex; align-items: flex-start; gap: 12px; }
     .audit-item-ico { width: 36px; height: 36px; background: rgba(34,197,94,.1); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -610,6 +622,7 @@
         <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
       <div class="service-card reveal reveal-d2">
+        <div class="service-shot"><img src="assets/images/lead-capture-mockup.png" alt="Pacific Growth Systems lead capture landing page with stats and lead form" loading="lazy"></div>
         <div class="service-ico" style="background:rgba(0,184,217,.1);" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="#00B8D9"/></svg></div>
         <h3>AI Lead Capture</h3>
         <p>Capture leads from your website, forms, social media, campaigns, and landing pages.</p>
@@ -813,6 +826,7 @@
     </div>
     <div class="examples-grid">
       <div class="example-card reveal reveal-d1">
+        <div class="example-shot"><img src="assets/images/realtor-case.png" alt="Realtor showing a client a property while an automatic appointment confirmation appears on their phone" loading="lazy"></div>
         <div class="example-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1E6BF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
         <div class="example-industry">Realtor</div>
         <h3>Realtor Lead System</h3>
@@ -825,6 +839,7 @@
         </div>
       </div>
       <div class="example-card reveal reveal-d2">
+        <div class="example-shot"><img src="assets/images/contractor-case.png" alt="Contractor at a job site with an AI voice assistant handling an incoming call" loading="lazy"></div>
         <div class="example-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg></div>
         <div class="example-industry">Contractor</div>
         <h3>Contractor Quote Request System</h3>
@@ -837,6 +852,7 @@
         </div>
       </div>
       <div class="example-card reveal reveal-d1">
+        <div class="example-shot"><img src="assets/images/clinic-case.png" alt="Clinic doctor showing the appointment calendar on a tablet at reception" loading="lazy"></div>
         <div class="example-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1E6BF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v6a2 2 0 0 0 2 2h6"/><path d="M4 6a2 2 0 0 1 2-2h7l5 5v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 16h6"/><path d="M12 13v6"/></svg></div>
         <div class="example-industry">Clinic</div>
         <h3>Clinic Appointment System</h3>
@@ -849,6 +865,7 @@
         </div>
       </div>
       <div class="example-card reveal reveal-d2">
+        <div class="example-shot"><img src="assets/images/medspa-case.png" alt="Med spa treatment in progress with a monthly content plan dashboard on screen" loading="lazy"></div>
         <div class="example-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg></div>
         <div class="example-industry">Med Spa</div>
         <h3>Med Spa Consultation System</h3>
@@ -934,38 +951,45 @@
       <div class="section-label">Why Us</div>
       <h2 class="section-title" id="why-h2">We are not just another marketing agency.</h2>
     </div>
-    <p class="why-copy reveal reveal-d1">Many agencies create content.<br>Many companies install tools.<br><strong>Pacific Growth Systems connects everything into one growth system.</strong><br><br>We create content that starts conversations, conversations that become leads, and leads that move into a clear follow-up and sales process. Every piece of the system is designed to work together.</p>
-    <div class="reveal reveal-d2">
-      <table class="compare-table" aria-label="Pacific Growth Systems vs Traditional Agency comparison">
-        <thead>
-          <tr>
-            <th>Traditional Agency</th>
-            <th>Pacific Growth Systems</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Creates posts</td>
-            <td><span class="compare-check">✓</span> Connects content to CRM</td>
-          </tr>
-          <tr>
-            <td>Runs ads</td>
-            <td><span class="compare-check">✓</span> Builds lead capture systems</td>
-          </tr>
-          <tr>
-            <td>Installs tools</td>
-            <td><span class="compare-check">✓</span> Designs connected workflows</td>
-          </tr>
-          <tr>
-            <td>Sends monthly reports</td>
-            <td><span class="compare-check">✓</span> Optimizes the full growth system</td>
-          </tr>
-          <tr>
-            <td>Focuses on visibility</td>
-            <td><span class="compare-check">✓</span> Connects visibility to sales action</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="why-grid" style="margin-top:32px;">
+      <div>
+        <p class="why-copy reveal reveal-d1" style="margin-top:0;">Many agencies create content.<br>Many companies install tools.<br><strong>Pacific Growth Systems connects everything into one growth system.</strong><br><br>We create content that starts conversations, conversations that become leads, and leads that move into a clear follow-up and sales process. Every piece of the system is designed to work together.</p>
+        <div class="reveal reveal-d2">
+          <table class="compare-table" aria-label="Pacific Growth Systems vs Traditional Agency comparison">
+            <thead>
+              <tr>
+                <th>Traditional Agency</th>
+                <th>Pacific Growth Systems</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Creates posts</td>
+                <td><span class="compare-check">✓</span> Connects content to CRM</td>
+              </tr>
+              <tr>
+                <td>Runs ads</td>
+                <td><span class="compare-check">✓</span> Builds lead capture systems</td>
+              </tr>
+              <tr>
+                <td>Installs tools</td>
+                <td><span class="compare-check">✓</span> Designs connected workflows</td>
+              </tr>
+              <tr>
+                <td>Sends monthly reports</td>
+                <td><span class="compare-check">✓</span> Optimizes the full growth system</td>
+              </tr>
+              <tr>
+                <td>Focuses on visibility</td>
+                <td><span class="compare-check">✓</span> Connects visibility to sales action</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="why-photo reveal reveal-d2">
+        <img src="assets/images/team-photo.png" alt="The Pacific Growth Systems team collaborating in their office" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -980,6 +1004,7 @@
           <h2 class="section-title" id="audit-h2">Book a Free 20-Minute Growth Audit</h2>
           <p class="section-sub">We'll review how your business currently captures leads, creates content, responds to inquiries, manages CRM, and follows up with prospects. You'll see exactly where opportunities are getting lost.</p>
         </div>
+        <div class="audit-photo reveal reveal-d1"><img src="assets/images/audit-photo.png" alt="Pacific Growth Systems team presenting growth audit findings to a client" loading="lazy"></div>
         <div class="audit-includes">
           <div class="audit-item reveal reveal-d1">
             <div class="audit-item-ico" aria-hidden="true">
@@ -1338,7 +1363,7 @@
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
   }
-  document.querySelectorAll('.service-shot img').forEach(img => {
+  document.querySelectorAll('.service-shot img, .example-shot img').forEach(img => {
     img.addEventListener('click', () => openLightbox(img.src, img.alt));
   });
   lightbox.addEventListener('click', closeLightbox);
