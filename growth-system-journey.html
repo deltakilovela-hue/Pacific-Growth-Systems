@@ -70,6 +70,8 @@
     .phase-deliverables ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
     .phase-deliverables li { font-size: .87rem; color: var(--text); display: flex; align-items: flex-start; gap: 8px; }
     .phase-deliverables li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .phase-photo { margin-top: 14px; border-radius: var(--radius-sm); overflow: hidden; }
+    .phase-photo img { width: 100%; max-width: 420px; height: auto; display: block; }
 
     /* Popular badge inline for this package */
     .popular-tag { display: inline-block; background: var(--green); color: #fff; font-size: .68rem; font-weight: 700; padding: 3px 10px; border-radius: 50px; margin-left: 8px; vertical-align: middle; }
@@ -173,6 +175,7 @@
             <li>Instant SMS &amp; email confirmation</li>
             <li>A 30-minute kickoff call with your team</li>
           </ul>
+          <div class="phase-photo"><img src="assets/images/onboarding.png" alt="Pacific Growth Systems onboarding kickoff call with a client team" loading="lazy"></div>
         </div>
       </div>
     </div>

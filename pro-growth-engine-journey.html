@@ -67,6 +67,8 @@
     .phase-deliverables ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
     .phase-deliverables li { font-size: .87rem; color: var(--text); display: flex; align-items: flex-start; gap: 8px; }
     .phase-deliverables li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .phase-photo { margin-top: 14px; border-radius: var(--radius-sm); overflow: hidden; }
+    .phase-photo img { width: 100%; max-width: 420px; height: auto; display: block; }
 
     #compare-strip { background: var(--gray); border-radius: var(--radius); padding: 32px 36px; margin: 8px 0 56px; }
     #compare-strip .tag { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
@@ -163,6 +165,7 @@
             <li>Instant SMS &amp; email confirmation</li>
             <li>A full kickoff session with your team</li>
           </ul>
+          <div class="phase-photo"><img src="assets/images/onboarding.png" alt="Pacific Growth Systems onboarding kickoff call with a client team" loading="lazy"></div>
         </div>
       </div>
     </div>

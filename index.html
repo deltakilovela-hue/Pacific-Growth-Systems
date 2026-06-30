@@ -136,6 +136,18 @@
     .trust-ico { width: 40px; height: 40px; background: rgba(30,107,242,.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .trust-txt { font-size: .88rem; color: var(--navy); font-weight: 500; line-height: 1.3; }
 
+    /* LOCAL BANNER */
+    #local-banner { position: relative; height: 320px; overflow: hidden; }
+    #local-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+    .local-banner-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,29,58,.88) 0%, rgba(11,29,58,.55) 45%, rgba(11,29,58,.15) 100%); }
+    .local-banner-text { position: absolute; top: 50%; left: 0; transform: translateY(-50%); padding: 0 24px; max-width: 1160px; margin: 0 auto; right: 0; }
+    .local-banner-tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--aqua); background: rgba(0,184,217,.12); border: 1px solid rgba(0,184,217,.3); padding: 5px 14px; border-radius: 50px; margin-bottom: 14px; }
+    .local-banner-text h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; color: #fff; max-width: 480px; }
+    @media (max-width: 768px) {
+      #local-banner { height: 240px; }
+      .local-banner-overlay { background: linear-gradient(180deg, rgba(11,29,58,.5) 0%, rgba(11,29,58,.85) 100%); }
+    }
+
     /* PROBLEM */
     #problem { background: var(--white); }
     .problem-header { max-width: 740px; }
@@ -162,8 +174,11 @@
     /* SERVICES */
     #services { background: var(--white); }
     .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
-    .service-card { background: var(--gray); border-radius: var(--radius); padding: 32px; border: 1px solid transparent; transition: all .25s; display: flex; flex-direction: column; }
+    .service-card { background: var(--gray); border-radius: var(--radius); padding: 32px; border: 1px solid transparent; transition: all .25s; display: flex; flex-direction: column; overflow: hidden; }
     .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow); background: #fff; }
+    .service-shot { margin: -32px -32px 20px -32px; overflow: hidden; border-bottom: 1px solid rgba(30,107,242,.1); }
+    .service-shot img { width: 100%; height: 150px; object-fit: cover; object-position: top; display: block; transition: transform .35s; }
+    .service-card:hover .service-shot img { transform: scale(1.04); }
     .service-ico { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
     .service-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
     .service-card p { font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6; }
@@ -486,6 +501,16 @@
   </div>
 </section>
 
+<!-- LOCAL BANNER -->
+<section id="local-banner" aria-label="Serving Burnaby and Metro Vancouver">
+  <img src="assets/images/burnaby-city.png" alt="Pacific Growth Systems billboard in Burnaby, Metro Vancouver skyline at dusk" loading="lazy">
+  <div class="local-banner-overlay"></div>
+  <div class="local-banner-text reveal">
+    <div class="local-banner-tag">Proudly Local</div>
+    <h2>Built in Burnaby. Built for Metro Vancouver.</h2>
+  </div>
+</section>
+
 <!-- PROBLEM -->
 <section id="problem" aria-labelledby="problem-h2">
   <div class="container">
@@ -588,6 +613,7 @@
     </div>
     <div class="services-grid">
       <div class="service-card reveal reveal-d1">
+        <div class="service-shot"><img src="assets/images/crm-mockup.png" alt="Pacific Growth Systems CRM pipeline dashboard showing opportunities by stage" loading="lazy"></div>
         <div class="service-ico" style="background:rgba(30,107,242,.1);" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E6BF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/><path d="M8 10v4"/><path d="M12 10v2"/><path d="M16 10v6"/></svg></div>
         <h3>AI CRM &amp; Sales Automation</h3>
         <p>Organize your leads, conversations, and opportunities inside a CRM your team can actually use.</p>
@@ -612,6 +638,7 @@
         <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
       <div class="service-card reveal reveal-d3">
+        <div class="service-shot"><img src="assets/images/chat-agent-mockup.png" alt="Pacific Growth Systems AI agent conversation with lead profile and qualification summary" loading="lazy"></div>
         <div class="service-ico" style="background:rgba(34,197,94,.1);" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></div>
         <h3>AI Chat Agents</h3>
         <p>Use AI agents to answer common questions, qualify prospects, collect information, and support appointment booking.</p>
@@ -624,6 +651,7 @@
         <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
       <div class="service-card reveal reveal-d1">
+        <div class="service-shot"><img src="assets/images/content-manager-mockup.png" alt="Pacific Growth Systems social media content calendar with scheduled posts" loading="lazy"></div>
         <div class="service-ico" style="background:rgba(30,107,242,.1);" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E6BF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
         <h3>AI Content Creation &amp; Scheduling</h3>
         <p>Plan, create, and schedule strategic content that keeps your business visible and connected to sales.</p>
@@ -636,6 +664,7 @@
         <a href="#audit" class="service-link">Ask about this system →</a>
       </div>
       <div class="service-card reveal reveal-d2">
+        <div class="service-shot"><img src="assets/images/automation-mockup.png" alt="Pacific Growth Systems automation builder showing a qualification and follow-up workflow" loading="lazy"></div>
         <div class="service-ico" style="background:rgba(0,184,217,.1);" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3>Growth Operations</h3>
         <p>Connect your content, CRM, AI agents, automations, and follow-up into one system that works together.</p>
