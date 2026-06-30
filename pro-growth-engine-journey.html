@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What to Expect with Pro Growth Engine | Pacific Growth Systems</title>
+  <meta name="description" content="A guided walkthrough of what happens after you choose the Pro Growth Engine package with Pacific Growth Systems — a complete AI-powered growth operation.">
+  <link rel="icon" type="image/png" href="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0B1D3A;
+      --blue: #1E6BF2;
+      --aqua: #00B8D9;
+      --green: #22C55E;
+      --gray: #F2F4F7;
+      --white: #FFFFFF;
+      --text: #1A2A3A;
+      --text-muted: #5A6A7A;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 4px 24px rgba(11,29,58,.12);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.65; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal.vis { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { transition: none; opacity: 1; transform: none; } }
+
+    header { padding: 24px 0; border-bottom: 1px solid rgba(30,107,242,.1); }
+    .header-inner { max-width: 880px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .back-link { font-size: .88rem; color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 6px; }
+    .back-link:hover { color: var(--blue); }
+    .logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: .95rem; color: var(--navy); }
+    .logo-text span { color: var(--aqua); }
+    .logo-crop { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-crop img { width: 100%; height: 100%; object-fit: contain; }
+
+    /* Hero — darker, more premium gradient for the top-tier package */
+    #hero { background: linear-gradient(135deg, var(--navy) 0%, #0e2a54 55%, #0a1e3d 100%); padding: 72px 0 64px; text-align: center; position: relative; overflow: hidden; }
+    #hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(34,197,94,.15) 0%, transparent 70%); pointer-events: none; }
+    .hero-badge { position: relative; display: inline-flex; align-items: center; gap: 8px; background: rgba(34,197,94,.14); border: 1px solid rgba(34,197,94,.35); color: var(--green); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 14px; border-radius: 50px; margin-bottom: 22px; }
+    #hero h1 { position: relative; font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; color: #fff; margin-bottom: 16px; }
+    #hero h1 .accent { color: var(--aqua); }
+    #hero p { position: relative; font-size: 1.05rem; color: rgba(255,255,255,.65); max-width: 600px; margin: 0 auto; }
+
+    #timeline { padding: 72px 0 40px; }
+    .phase { display: grid; grid-template-columns: 64px 1fr; gap: 24px; }
+    .phase-rail { display: flex; flex-direction: column; align-items: center; }
+    .phase-ico { width: 56px; height: 56px; border-radius: 16px; background: var(--gray); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0; border: 1px solid rgba(34,197,94,.15); }
+    .phase-line { width: 2px; flex: 1; background: linear-gradient(to bottom, rgba(34,197,94,.4), rgba(34,197,94,.05)); margin: 8px 0; min-height: 40px; }
+    .phase:last-child .phase-line { display: none; }
+    .phase-content { padding-bottom: 56px; }
+    .phase-step { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 6px; }
+    .phase-content h3 { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .phase-duration { font-size: .8rem; color: var(--text-muted); font-style: italic; margin-bottom: 14px; }
+    .phase-content p { font-size: .92rem; color: var(--text-muted); margin-bottom: 14px; }
+    .phase-deliverables { background: var(--gray); border-radius: var(--radius-sm); padding: 16px 20px; }
+    .phase-deliverables div { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+    .phase-deliverables ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .phase-deliverables li { font-size: .87rem; color: var(--text); display: flex; align-items: flex-start; gap: 8px; }
+    .phase-deliverables li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    #compare-strip { background: var(--gray); border-radius: var(--radius); padding: 32px 36px; margin: 8px 0 56px; }
+    #compare-strip .tag { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    #compare-strip h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .compare-col h4 { font-size: .85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .05em; }
+    .compare-col ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .compare-col li { font-size: .85rem; color: var(--text-muted); }
+    .compare-col.upgrade li { color: var(--text); }
+    .compare-col.upgrade li::before { content: '+ '; color: var(--green); font-weight: 700; }
+
+    #top-tier-note { border: 2px solid rgba(34,197,94,.25); border-radius: var(--radius); padding: 32px 36px; margin: 8px 0 64px; text-align: center; background: linear-gradient(135deg, rgba(34,197,94,.04), rgba(0,184,217,.04)); }
+    #top-tier-note .tag { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    #top-tier-note h3 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    #top-tier-note p { font-size: .92rem; color: var(--text-muted); max-width: 580px; margin: 0 auto; }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 50px; font-family: 'Sora', sans-serif; font-size: .95rem; font-weight: 600; cursor: pointer; transition: all .22s; border: none; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: #155ee0; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30,107,242,.35); }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid rgba(11,29,58,.15); }
+    .btn-outline:hover { border-color: var(--navy); }
+    #final-cta { text-align: center; padding: 56px 0 88px; }
+    #final-cta h2 { font-size: 1.7rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    #final-cta p { font-size: .95rem; color: var(--text-muted); margin-bottom: 28px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    footer { padding: 28px 0; border-top: 1px solid rgba(30,107,242,.1); text-align: center; }
+    footer p { font-size: .8rem; color: var(--text-muted); }
+
+    @media (max-width: 600px) {
+      .phase { grid-template-columns: 48px 1fr; gap: 16px; }
+      .phase-ico { width: 44px; height: 44px; font-size: 1.3rem; border-radius: 12px; }
+      #hero { padding: 56px 0 48px; }
+      #timeline { padding: 48px 0 24px; }
+      .compare-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="back-link" aria-label="Back to home">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to Home
+    </a>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span class="logo-crop"><img src="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png" alt="Pacific Growth Systems logo"></span>
+      <div class="logo-text">Pacific <span>Growth</span> Systems</div>
+    </div>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M5 1l1.3 3.9H10l-3.2 2.3 1.2 3.8L5 8.7l-3 2.3 1.2-3.8L0 4.9h3.7L5 1z" fill="currentColor"/></svg>
+      Top Tier · Pro Growth Engine Package
+    </div>
+    <h1>Here's what to expect with <span class="accent">Pro Growth Engine</span></h1>
+    <p>A guided walkthrough of how we build a complete AI-powered growth operation — content, leads, automation, and sales working together as one engine.</p>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="container">
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">📋</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 1</div>
+        <h3>Before You Start</h3>
+        <div class="phase-duration">Instant</div>
+        <p>You choose Pro Growth Engine and book your free 20-minute Growth Audit. We'll confirm this is the right fit for a business ready to run content, leads, and sales as one connected operation.</p>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">🤝</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 2 · Day 0–2</div>
+        <h3>Onboarding</h3>
+        <div class="phase-duration">1–2 business days</div>
+        <p>We confirm your package and run a deeper kickoff call covering every channel you use — website, social, ads, referrals — and how your team currently manages sales.</p>
+        <div class="phase-deliverables">
+          <div>What you receive</div>
+          <ul>
+            <li>Instant SMS &amp; email confirmation</li>
+            <li>A full kickoff session with your team</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">🔍</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 3 · Week 1</div>
+        <h3>Growth Audit</h3>
+        <div class="phase-duration">4–5 days</div>
+        <p>We review every channel that brings you leads, your content strategy, your CRM, your automations, and your sales process end-to-end to find every gap.</p>
+        <div class="phase-deliverables">
+          <div>What you receive</div>
+          <ul>
+            <li>A complete multi-channel audit</li>
+            <li>A prioritized roadmap of what to build first</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">📐</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 4 · Week 1–2</div>
+        <h3>System Design</h3>
+        <div class="phase-duration">5–7 days</div>
+        <p>We design your advanced CRM structure, your multi-channel AI agent (web, social, SMS), your landing page and follow-up campaigns, and your full content production plan.</p>
+        <div class="phase-deliverables">
+          <div>What you receive</div>
+          <ul>
+            <li>A complete growth engine blueprint</li>
+            <li>Channel-by-channel automation plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">⚙️</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 5 · Week 2–4</div>
+        <h3>Build &amp; Setup</h3>
+        <div class="phase-duration">10–14 days</div>
+        <p>We build your advanced CRM with complete automations, configure your multi-channel AI agent, launch your landing page and follow-up campaigns, connect your appointment calendar, and start producing your full monthly content set.</p>
+        <div class="phase-deliverables">
+          <div>What's being built</div>
+          <ul>
+            <li>Advanced CRM &amp; complete automations</li>
+            <li>Multi-channel AI agent</li>
+            <li>Landing page &amp; follow-up campaigns</li>
+            <li>Appointment calendar</li>
+            <li>20 monthly posts</li>
+            <li>Educational carousels &amp; reels scripts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">🚀</div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 6 · Week 4</div>
+        <h3>Launch</h3>
+        <div class="phase-duration">3–5 days</div>
+        <p>We test every channel and automation together — content, lead capture, AI agent, CRM, and follow-up campaigns — to confirm your full growth engine runs as one system before going live.</p>
+        <div class="phase-deliverables">
+          <div>What you receive</div>
+          <ul>
+            <li>Full CRM &amp; automation access</li>
+            <li>Live multi-channel AI agent</li>
+            <li>A guided walkthrough of your complete engine</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase reveal">
+      <div class="phase-rail">
+        <div class="phase-ico" aria-hidden="true">📊</div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-step">Step 7 · Ongoing</div>
+        <h3>Month 1 &amp; Beyond</h3>
+        <div class="phase-duration">Every month</div>
+        <p>Your full growth engine keeps running — 20 monthly posts, carousels, and reels scripts get produced, every channel keeps capturing and following up with leads, and we optimize the system every month based on real performance.</p>
+        <div class="phase-deliverables">
+          <div>What you receive every month</div>
+          <ul>
+            <li>20 monthly posts</li>
+            <li>Educational carousels &amp; reels scripts</li>
+            <li>Reports &amp; monthly optimization</li>
+            <li>Ongoing multi-channel follow-up automation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="compare-strip" class="reveal">
+      <div class="tag">More Than Growth System</div>
+      <h3>What's different from Growth System</h3>
+      <div class="compare-grid">
+        <div class="compare-col">
+          <h4>Growth System had</h4>
+          <ul>
+            <li>Complete CRM &amp; custom pipeline</li>
+            <li>Commercial AI chat agent</li>
+            <li>12–16 monthly posts &amp; captions</li>
+            <li>Monthly performance report</li>
+          </ul>
+        </div>
+        <div class="compare-col upgrade">
+          <h4>Pro Growth Engine adds</h4>
+          <ul>
+            <li>Advanced CRM &amp; complete automations</li>
+            <li>Multi-channel AI agent</li>
+            <li>Dedicated landing page &amp; follow-up campaigns</li>
+            <li>20 monthly posts</li>
+            <li>Educational carousels &amp; reels scripts</li>
+            <li>Monthly optimization, not just reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="top-tier-note" class="reveal">
+      <div class="tag">You're at the Top Tier</div>
+      <h3>This is our most complete growth system</h3>
+      <p>Pro Growth Engine connects every channel, every piece of content, and every lead into one operation. From here, growth comes from optimizing what's already built — not adding more disconnected tools.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="final-cta">
+  <div class="container">
+    <h2>Ready to run content, leads, and sales as one engine?</h2>
+    <p>Book your free 20-minute Growth Audit — no pressure, just a clear next step for your business.</p>
+    <div class="cta-btns">
+      <a href="index.html#audit" class="btn btn-primary">Book a Free Growth Audit</a>
+      <a href="index.html#packages" class="btn btn-outline">Compare Packages</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Pacific Growth Systems. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
