@@ -164,8 +164,15 @@
     .service-card { background: var(--gray); border-radius: var(--radius); padding: 32px; border: 1px solid transparent; transition: all .25s; display: flex; flex-direction: column; overflow: hidden; }
     .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow); background: #fff; }
     .service-shot { margin: -32px -32px 20px -32px; overflow: hidden; border-bottom: 1px solid rgba(30,107,242,.1); }
-    .service-shot img { width: 100%; height: 150px; object-fit: cover; object-position: top; display: block; transition: transform .35s; }
+    .service-shot img { width: 100%; height: 150px; object-fit: cover; object-position: top; display: block; transition: transform .35s; cursor: zoom-in; }
     .service-card:hover .service-shot img { transform: scale(1.04); }
+
+    /* LIGHTBOX */
+    #lightbox { position: fixed; inset: 0; background: rgba(8,21,43,.92); backdrop-filter: blur(4px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 40px 24px; cursor: zoom-out; opacity: 0; transition: opacity .25s; }
+    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox img { max-width: min(900px, 100%); max-height: 85vh; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,.5); transform: scale(.96); transition: transform .25s; }
+    #lightbox.open img { transform: scale(1); }
+    #lightbox-close { position: absolute; top: 24px; right: 28px; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); color: #fff; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; }
     .service-ico { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
     .service-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
     .service-card p { font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6; }
@@ -1233,6 +1240,12 @@
   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 13V5M5 9l4-4 4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button id="lightbox-close" aria-label="Close image preview">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
 <script>
   // Scroll progress + nav
   const bar = document.getElementById('scroll-bar');
@@ -1310,6 +1323,27 @@
       if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // Lightbox for service screenshots
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.service-shot img').forEach(img => {
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+  });
+  lightbox.addEventListener('click', closeLightbox);
+  lightboxClose.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>
