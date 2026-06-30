@@ -96,6 +96,8 @@
     .nav-logo { display: flex; align-items: center; gap: 10px; }
     .nav-logo-text { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; line-height: 1.15; }
     .nav-logo-text span { color: var(--aqua); }
+    .logo-crop { width: 52px; height: 52px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-crop img { width: 190px; height: auto; max-width: none; }
     .nav-links { display: flex; align-items: center; gap: 4px; }
     .nav-links a { color: rgba(255,255,255,.8); font-size: .9rem; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: color .2s, background .2s; }
     .nav-links a:hover { color: #fff; background: rgba(255,255,255,.08); }
@@ -360,7 +362,7 @@
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo" aria-label="Pacific Growth Systems home">
-      <img src="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png" alt="Pacific Growth Systems logo" width="56" height="56" style="object-fit:contain;flex-shrink:0;">
+      <span class="logo-crop"><img src="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png" alt="Pacific Growth Systems logo"></span>
       <div class="nav-logo-text">Pacific <span>Growth</span><br>Systems</div>
     </a>
     <div class="nav-links">
@@ -1158,7 +1160,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="#hero" class="nav-logo" aria-label="Pacific Growth Systems home">
-          <img src="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png" alt="Pacific Growth Systems logo" width="56" height="56" style="object-fit:contain;flex-shrink:0;">
+          <span class="logo-crop"><img src="https://assets.cdn.filesafe.space/9Un7GdO0qbuVyQnChqkz/media/6a42aaf542c4669a15c54135.png" alt="Pacific Growth Systems logo"></span>
           <div class="nav-logo-text">Pacific <span>Growth</span><br>Systems</div>
         </a>
         <p>Pacific Growth Systems helps local businesses in Burnaby and Metro Vancouver build connected AI-powered growth systems for content, leads, follow-up, and sales.</p>
